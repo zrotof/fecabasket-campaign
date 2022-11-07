@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class OfficeMemberService {
 
-   officeMembers =   [
+   officeMembers : any[] =   [
     {
       id: 1,
       name:"Serge Banda",
@@ -206,7 +206,7 @@ export class OfficeMemberService {
   ]
   constructor() { }
 
-  getOfficeMemberDataList(){
+  getOfficeMemberDataList(): any[]{
     return this.officeMembers.map( res =>{
       return{
         id: res.id,
@@ -217,7 +217,7 @@ export class OfficeMemberService {
     })
   }
 
-  getOfficeMemberData(param: number){
+  getOfficeMemberData(param: number): any{
     return this.officeMembers.filter(res => res.id == param)[0]
   }
 }
