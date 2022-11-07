@@ -57,7 +57,7 @@ import { TestimoniesComponent } from './components/testimonies/testimonies.compo
     TestimoniesComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     BrowserAnimationsModule,
     AppRoutingModule,
     FontAwesomeModule,
