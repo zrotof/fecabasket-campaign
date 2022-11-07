@@ -27,7 +27,6 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { ProgramComponent } from './components/program/program.component';
 import { ShareComponent } from './components/share/share.component';
 import { DonateComponent } from './components/donate/donate.component';
-import { TitleComponent } from './components/title/title.component';
 import { OfficeMemberDetailsComponent } from './components/office-member-details/office-member-details.component';
 import { ProgramShortComponent } from './components/program-short/program-short.component';
 import { ProgramLongComponent } from './components/program-long/program-long.component';
@@ -50,7 +49,6 @@ import { TestimoniesComponent } from './components/testimonies/testimonies.compo
     HomeProgramComponent,
     ShareComponent,
     DonateComponent,
-    TitleComponent,
     OfficeMemberDetailsComponent,
     ProgramShortComponent,
     ProgramLongComponent,

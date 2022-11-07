@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AgendaComponent } from './components/agenda/agenda.component';
 import { DonateComponent } from './components/donate/donate.component';
-import { DonationsComponent } from './components/donations/donations.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
