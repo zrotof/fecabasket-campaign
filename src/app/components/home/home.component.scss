@@ -1,0 +1,116 @@
+.home{
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    align-items: center;
+    min-height: 100vh;
+
+    .hero{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url("../../../assets/img/home/image.jpeg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        width: 100%;
+        height: 80vh;
+
+        .hero-content{
+
+            position: relative;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+
+            img{
+                position: absolute;
+                bottom: 0;
+                width: 55vh;
+                right: 10%;
+
+            }
+
+            .texts{
+                display: flex;
+                flex-direction: column;
+                color: white;
+                margin: 40px 0 0 5%;
+
+                span:first-child{
+                    align-self: flex-start;
+                    font-style: italic;
+                    font-weight: 900;
+                }
+
+                h1{
+                    margin-bottom: 15px;
+                    color: #f56f36;
+                    font-weight: 900;
+                    font-size: 4em;
+                }
+
+                span{
+                    line-height: 28px;                
+                    font-size: 22px;
+                    font-weight: 100;
+                }
+                
+
+                button{
+                    width: fit-content;
+                    padding: 10px 15px;
+                    border-radius: 5px;
+                    margin-top: 35px;
+                    color: #f56f36;
+                    cursor: pointer;
+                    transition: all 0.2s ease-in;
+                    font-weight: 700;
+                    font-size: 1.05em;
+                    border: none;
+
+                    &:hover{
+                        background-color: #f56f36;
+                        color: white;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+    .content{
+        padding-top: 5em;
+        padding-bottom: 5em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        h2{
+            color: #f56f36;
+            margin: 70px 0 30px 0;
+            border-radius: 3px;
+            width: 100%;
+
+            span{
+                padding: 10px 25px;
+                color: white;
+                background-color: #15385c;
+                font-weight: bold;
+                margin-right: 5px;
+                border-radius: 3px;
+            }
+        }
+
+        app-infinite-scroll-argument,
+        app-home-about,
+        app-home-program,
+        app-testimonies{
+            width: 100%;
+        }
+    }
+}

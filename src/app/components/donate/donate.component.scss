@@ -1,0 +1,81 @@
+$colorBlue: #15385c;
+
+.donates{
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    align-items: center;
+    min-height: 100vh;
+
+    .title{
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: $colorBlue;
+
+        .top-content{
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+
+            h1{
+                color: #ed6e34 ;
+                width: 460px;
+                text-align: center;
+                margin-top: 90px;
+                font-size: 2.5em;
+                margin-bottom: 30px;
+            }
+
+            p{
+                max-width: 80%;
+                text-align: center;
+                color: white;
+                line-height: 28px;
+            }
+        }
+    }
+
+    .content{
+        padding-top: 5em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+        .ui-steps .ui-steps-item {
+            width: 25%;
+        }
+        
+        .ui-steps.steps-custom {
+            margin-bottom: 30px;
+        }
+        
+        .ui-steps.steps-custom .ui-steps-item .ui-menuitem-link {
+            padding: 0 1em;
+            overflow: visible;
+        }
+        
+        .ui-steps.steps-custom .ui-steps-item .ui-steps-number {
+            background-color: #0081c2;
+            color: #FFFFFF;
+            display: inline-block;
+            width: 36px;
+            border-radius: 50%;
+            margin-top: -14px;
+            margin-bottom: 10px;
+        }
+        
+        .ui-steps.steps-custom .ui-steps-item .ui-steps-title {
+            color: #555555;
+        }
+    }
+}

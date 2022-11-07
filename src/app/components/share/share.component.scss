@@ -1,0 +1,122 @@
+$colorBlue: #15385c;
+
+.share{
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    align-items: center;
+    min-height: 100vh;
+
+    .title{
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: $colorBlue;
+
+        .top-content{
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+
+            h1{
+                color: #ed6e34;
+                width: 460px;
+                text-align: center;
+                margin-top: 90px;
+                font-size: 2.5em;
+                margin-bottom: 30px;
+            }
+
+            p{
+                max-width: 80%;
+                text-align: center;
+                color: white;
+                line-height: 28px;
+            }
+        }
+    }
+
+    .content{
+        padding-top: 5em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+        .sharing-ways{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px, rgb(0 0 0 / 30%) 0px 1px 3px -1px;
+            padding: 50px 100px;
+            border-radius: 10px;
+            top: -120px;
+            position: relative;
+
+            .ways-contener{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 5px;
+                border: 1px solid #aeaeae;
+                flex-direction: column;
+                width: 440px;
+
+                a{
+                    text-decoration: none;
+                    padding: 15px 15px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-bottom: 1px solid #aeaeae;
+                    width: 100%;
+                    font-size: 1.05em;
+                    cursor: pointer;
+                    color: black;
+
+                    &:hover{
+                        box-shadow: hsla(18, 91%, 59%, 0.826) 0px 3px 8px;
+                    }
+
+                    i{
+                        margin-right: 10px;
+                        font-size: 1.7em;
+                    }
+
+                    &:last-child{
+                        border-bottom: none;
+                    }
+
+                }
+
+                .whatsapp{
+                    i{
+                        color: #0c9e04;
+                    }
+                }
+
+                .facebook{
+                    i{
+                        color: #1778f2;
+                    }
+                }
+
+                .twitter{
+                    i{
+                        color: #3aa1f2;
+                    }
+                }
+            }
+        }
+        
+    }
+}

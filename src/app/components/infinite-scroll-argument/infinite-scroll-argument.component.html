@@ -1,0 +1,53 @@
+<div class="arguments">
+
+    <div class="infinite-swiper">
+        <swiper
+        
+        [spaceBetween]="10"
+        [loop]="true"
+        [autoplay]="{
+          delay: 5000,
+          disableOnInteraction: true
+        }"
+        [pagination]="{
+          clickable: true
+        }"
+        [navigation]="true"
+
+        [breakpoints]="{
+      '640': {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      '768': {
+        slidesPerView: 4,
+        spaceBetween: 40
+      },
+      '1024': {
+        slidesPerView: 4,
+        spaceBetween: 50
+      }
+    }"
+        class="mySwiper"
+        #swiper
+    >
+
+        <ng-template *ngFor="let officeMember of officeMemberList" swiperSlide>
+            <div class="mySlide">
+                    <img src={{officeMember.image}} alt="">
+                    <div class="texts">
+                        <span class="name">{{officeMember.name}}</span>
+                        <span class="role">{{officeMember.role}}</span>
+                    </div>
+                    <button (click)="showOfficeManagerDetails(officeMember.id)" >Voir plus</button>
+            </div>
+        </ng-template>
+        </swiper>
+
+        <div class="arrows my-container">
+            <button aria-label="navigation à droite" class="prev" (click)="arrowSlide(-1)"><fa-icon [icon]="faChevronLeft"></fa-icon></button>
+            <button aria-label="navigation à gauche" class="next" (click)="arrowSlide(1)"><fa-icon [icon]="faChevronRight"></fa-icon></button>
+        </div>
+    </div>   
+
+</div>

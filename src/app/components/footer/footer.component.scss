@@ -1,0 +1,152 @@
+.footer{
+    background:  #e7e0dc;
+    width: 100%;
+    height: fit-content;
+    color: #15385d;
+    display: flex;
+    justify-content: center;
+
+    .content{
+        display: flex;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        width: 100%;
+
+        flex-direction: column;
+
+        .top{
+
+            width: 100%;
+            display: flex;
+            border-bottom: 1px solid #b5b8ba;
+            padding-bottom: 30px;
+            align-items: flex-start;
+            justify-content: space-between;
+
+            .left{
+                display: flex;
+                flex-direction: column;
+                width: 400px;
+    
+                a{
+                    text-decoration: none;
+                    font-weight: 900;
+                    position: relative;
+                    color: #15385d;
+                    margin-bottom: 25px;
+                    font-size: 1.2em;
+    
+                    &::after{
+                        position: absolute;
+                        content: "";
+                        left: 0;
+                        bottom: -4px;
+                        height: 3px;
+                        width: 298px;
+                        background-color: #f56f36;
+                    }
+                }
+
+                .summary{
+                    font-size: 0.9em;
+                    font-weight: 300;
+                }
+    
+                .slogan{
+                    margin-top: 15px;
+                    font-weight: 500;
+                }
+            }
+    
+            .right{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                justify-content: space-between;
+                height: 100%;
+    
+                .social-medias{
+                    display: flex;
+    
+                    i{
+                        font-size: 1.5em;
+                        margin-left: 7px;
+                        cursor: pointer;
+                        transition: all 0.2s ease-in-out;
+    
+                        &:hover{
+                            transform: translateY(-7px);
+    
+                        }
+                    }
+                }
+    
+                .donate{
+                    background: #f56f36;
+                    color: white;
+                    padding: 10px 20px;
+                    border: 2px solid #f56f36;
+                    cursor: pointer;
+                    transition: all 0.3s ease-in-out;
+    
+                    &:hover{
+                        background: white;
+                        color: #f56f36;
+                    }
+                }
+    
+                .share{
+                    background: white;
+                    color: #15385d;
+                    padding: 10px 20px;
+                    border: 2px solid #15385d;
+                    padding: 10px;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    transition: all 0.3s ease-in-out;
+    
+                    &:hover{
+                        background: #15385d;
+                        color: white;
+                    }
+    
+                    i{
+                        margin-right: 10px;
+                        font-size: 1.2em;
+                    }
+                }
+    
+                nav{
+                    ul{
+                        list-style: none;
+                        display: flex;
+    
+                        li{
+                            margin-left: 30px;
+    
+                            a{
+                                text-decoration: none;
+                                cursor: pointer;
+                                font-size: 0.9em;
+                                font-weight: 900;
+                                transition: all 0.2s ease-in-out;
+    
+                                &:hover{
+                                    color: #f56f36;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .bottom{
+            padding-top: 30px;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+}

@@ -1,0 +1,41 @@
+<header>
+
+    <div class="content my-container">
+        <a routerLink="" class="logo">La Solution <span>Basket</span></a>
+
+        <div class="right">
+
+            <nav>
+                <ul>
+                    <li><a rel="canonical" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}" routerLink="/agenda">Agenda</a></li>
+                    <li><a rel="canonical" routerLinkActive="active-link" routerLink="/programme">Programme</a></li>
+                    <li><a rel="canonical" routerLinkActive="active-link" routerLink="/nous-contacter">Nous contacter</a></li>
+                </ul>
+
+                <button (click)="showActMenu = !showActMenu">
+                    <span>
+                        Agir
+                        <fa-icon [icon]="faAngleDown"></fa-icon>
+                    </span>
+                    <div class="menus" *ngIf="showActMenu">
+                        <a rel="canonical" routerLinkActive="active-link" routerLink="/partager-la-campagne">Partager la campagne</a>
+                        <a rel="canonical" routerLinkActive="active-link" routerLink="/faire-un-don">Faire un don</a>
+                    </div>
+                </button>
+            </nav>
+
+
+
+        </div>
+        <div class="burger" (click)="onBurgerMenu()">
+            <input type="checkbox" />
+        
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+
+    </div>
+
+</header>

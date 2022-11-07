@@ -1,0 +1,114 @@
+$colorBlue: #15385c;
+
+.agenda{
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    align-items: center;
+    min-height: 100vh;
+
+    .title{
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: $colorBlue;
+
+        .top-content{
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+
+            h1{
+                color: #ed6e34;
+                width: 460px;
+                text-align: center;
+                margin-top: 90px;
+                font-size: 2.5em;
+                margin-bottom: 30px;
+            }
+
+            p{
+                max-width: 80%;
+                text-align: center;
+                color: white;
+                line-height: 28px;
+            }
+        }
+    }
+
+    .content{
+        padding-top: 5em;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+
+                    .events{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        max-width: 80%;
+                        margin: auto;
+                        padding: 70px 0;
+
+                        .event{
+                            display: flex;
+                            width: 100%;
+                            margin-bottom: 80px;
+            
+                            .left{
+                                display: flex;
+                                flex-direction: column;
+                                margin-right: 40px;
+            
+                                .header{
+                                    font-size: 1.3em;
+                                    margin-bottom: 10px;
+                                    color:  #f56f36;
+                                }
+            
+                                .date{
+                                    color: black;
+                                    margin-bottom: 10px;
+                                    font-weight: 700;
+                                }
+            
+                                .text{
+                                    font-size: 0.95em;
+                                }
+
+                                .video{
+                                    display: flex;
+                                    margin-top: 20px;
+                                    align-items: center;
+                                    cursor: pointer;
+
+                                    &:hover{
+                                        color: red;
+                                    }
+
+                                    i{
+                                        margin-right: 10px;
+                                        font-size: 1.4em;
+                                    }
+                                }
+                            }
+            
+                            img{
+                                object-fit: cover;
+                                width: 250px;
+                                height: 200px;
+                                border-radius: 5px;
+                            }
+                        }
+                    }
+    
+    }
+}

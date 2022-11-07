@@ -1,0 +1,51 @@
+<div class="office-manager-detail">
+    <div class="content my-container">
+
+        <div class="top">
+            <img src={{officeMemberData.image}} alt="">
+            <div class="manager-data">
+                <span class="label"> <span> Team</span> Yves TSALA 2022 </span>
+                <span class="name"> {{officeMemberData.name}} </span>
+                <span class="role"> {{officeMemberData.role}} </span>
+            </div>
+        </div>
+
+        <div class="bottom">
+
+            <div class="skills">
+                <p class="header">Compétences</p>
+                <ng-template ngFor let-skill [ngForOf]="officeMemberData.skills">
+                    <div class="skill">
+                        <p>{{skill.label}}</p>
+                        <ul>
+                            <ng-template ngFor let-list [ngForOf]="skill.list">
+                                <li> {{list.paragraph}} </li>
+                            </ng-template>
+                        </ul>
+                    </div>
+                </ng-template>
+            </div>
+
+            <div class="project">
+                <p class="header">Mon Projet</p>
+                <ng-template ngFor let-project [ngForOf]="officeMemberData.project">
+                    <p class="paragraphe"> {{project.paragraph}} </p>
+                </ng-template>
+            </div>
+
+            <div class="expectation">
+                <p class="header">Mes Attentes</p>
+                <ng-template ngFor let-expectation [ngForOf]="officeMemberData.expectation">
+                    <p class="paragraphe"> {{expectation.paragraph}} </p>
+                </ng-template>
+            </div>
+
+            <div class="pathway">
+                <p class="header">Mon Parcours</p>
+                <ng-template ngFor let-pathway [ngForOf]="officeMemberData.pathway">
+                    <p class="paragraphe"> {{pathway.paragraph}} </p>
+                </ng-template>
+            </div>
+        </div>
+    </div>
+</div>

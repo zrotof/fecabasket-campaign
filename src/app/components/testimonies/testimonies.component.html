@@ -1,0 +1,53 @@
+<div class="testimonies">
+
+    <div class="infinite-swiper">
+        <swiper
+        
+        [spaceBetween]="10"
+        [loop]="true"
+        [autoplay]="{
+          delay: 15000,
+          disableOnInteraction: true
+        }"
+        [pagination]="{
+          clickable: true
+        }"
+        [navigation]="true"
+
+        [breakpoints]="{
+      '640': {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      '768': {
+        slidesPerView: 2,
+        spaceBetween: 40
+      },
+      '1024': {
+        slidesPerView: 3,
+        spaceBetween: 50
+      }
+    }"
+        class="mySwiper"
+        #swiper
+    >
+
+        <ng-template *ngFor="let testimony of testimoniesList" swiperSlide>
+            <div class="mySlide">
+                    <img src={{testimony.image}} alt="">
+                    <div class="texts">
+                        <span class="message">{{testimony.message}}</span>
+                        <span class="name">{{testimony.name}}</span>
+                        <span class="role">{{testimony.role}}</span>
+                    </div>
+            </div>
+        </ng-template>
+        </swiper>
+
+        <div class="arrows my-container">
+            <button aria-label="navigation à droite" class="prev" (click)="arrowSlide(-1)"><fa-icon [icon]="faChevronLeft"></fa-icon></button>
+            <button aria-label="navigation à gauche" class="next" (click)="arrowSlide(1)"><fa-icon [icon]="faChevronRight"></fa-icon></button>
+        </div>
+    </div>   
+
+</div>

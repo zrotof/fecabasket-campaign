@@ -1,0 +1,53 @@
+$color: #15385c;
+
+.about{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    margin: 50px 0 80px 0;
+
+    img{
+        object-fit: cover;
+        width: 50%;
+        height: 27em;
+        border-radius: 10px;
+        object-position: top;
+    }
+
+    .texts{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: white;
+        padding: 25px 25px;
+        left: 40%;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+
+        .header{
+
+            color: #f56f36;
+        }
+
+        p{
+            margin: 10px 0 30px 0;
+        }
+
+        button{
+            padding: 10px 15px;
+            background: white;
+            color: $color;
+            border-radius: 3px;
+            border: 2px solid $color;
+            transition: all 0.2s ease-in;
+            cursor: pointer;
+
+            &:hover{
+                background-color: $color;
+                color: white;
+            }
+        }
+    }
+
+
+}
