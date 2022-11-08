@@ -1,0 +1,88 @@
+$colorBlue: #15385c;
+
+.program-long{
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    align-items: center;
+    min-height: 100vh;
+
+    .title{
+        width: 100%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: $colorBlue;
+
+        .top-content{
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+
+            h1{
+                color: #ed6e34;
+                width: 460px;
+                text-align: center;
+                margin-top: 90px;
+                font-size: 2.5em;
+                margin-bottom: 30px;
+            }
+
+            p{
+                max-width: 80%;
+                text-align: center;
+                color: white;
+                line-height: 28px;
+            }
+        }
+    }
+
+    .content{
+        padding: 5em 0; 
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+
+            .nav{
+                display: flex;
+                flex-direction: column;
+                width: fit-content;
+
+                ul{
+                    list-style: none;
+
+                    li{
+                        margin-bottom: 15px;
+
+                        button{
+                            cursor: pointer;
+                            background: white;
+                            padding: 10px 20px;
+                            width: 100%;
+                            border-radius: 2px;
+                            border-width: 7px;
+                            border-style: solid;
+                            border-image: linear-gradient(90deg, #059e0500 0%, #cf000000 100%);
+                            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+                            &:hover{
+                                border-image: linear-gradient(90deg, rgba(21,56,92,1) 44%, rgba(245,111,54,1) 100%) 1;
+                            }
+                        }
+
+                        .active-button{
+                            border-image: linear-gradient(90deg, rgba(21,56,92,1) 44%, rgba(245,111,54,1) 100%) 1;
+                        }
+                    }
+                }
+            
+        }
+    }
+}

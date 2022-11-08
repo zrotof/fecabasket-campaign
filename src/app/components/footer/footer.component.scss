@@ -42,7 +42,7 @@
                         left: 0;
                         bottom: -4px;
                         height: 3px;
-                        width: 298px;
+                        width: 215px;
                         background-color: #f56f36;
                     }
                 }
@@ -54,7 +54,8 @@
     
                 .slogan{
                     margin-top: 15px;
-                    font-weight: 500;
+                    font-weight: 900;
+                    letter-spacing: 5px;
                 }
             }
     
@@ -131,7 +132,8 @@
                                 font-size: 0.9em;
                                 font-weight: 900;
                                 transition: all 0.2s ease-in-out;
-    
+                                color: #15385d;
+                                
                                 &:hover{
                                     color: #f56f36;
                                 }
