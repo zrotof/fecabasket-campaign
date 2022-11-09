@@ -12,6 +12,7 @@ import { DynamicDialogModule } from 'primeng/dynamicdialog';
 import { TooltipModule } from 'primeng/tooltip';
 import { TabViewModule } from 'primeng/tabview';
 import { StepsModule } from 'primeng/steps';
+import { AccordionModule } from 'primeng/accordion';
 
 import { AppComponent } from './app.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -64,7 +65,8 @@ import { TestimoniesComponent } from './components/testimonies/testimonies.compo
     DynamicDialogModule,
     ToastModule,
     TabViewModule,
-    StepsModule
+    StepsModule,
+    AccordionModule
 
   ],
   providers: [],

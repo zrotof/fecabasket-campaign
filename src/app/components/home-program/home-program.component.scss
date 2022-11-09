@@ -47,7 +47,7 @@
                     color: #f56f36;
                 }
 
-                .texts{
+                .tab-texts{
                     margin: 0 15px;
                     width: 100%;
                     .top{
@@ -119,4 +119,78 @@
         }
     }
 
+}
+
+@media all and (max-width: 880px){
+
+    .program{
+
+        flex-direction: column-reverse;
+
+        img{
+            width: 250px;
+        }
+
+        .texts{
+            margin-right: 0;
+            margin-top: 40px;
+            width: 100%;
+            align-items: center;
+
+            .header{
+                font-size: 1.3em;
+                text-align: center;
+            }
+        }
+        
+    }
+}
+
+@media all and (max-width: 490px){
+
+    .program{
+
+        img{
+            width: 220px;
+        }
+
+        .texts{
+
+            .header{
+                font-size: 1.1em;
+            }
+
+            .tabs{
+
+                .tab{
+                    flex-direction: column;
+                    padding: 20px 10px;
+                
+                    .tab-texts{
+                        text-align: center;
+                    }
+
+                    fa-icon:last-child{
+                        display: none;
+                    }
+                }
+            }
+
+            .call-to-donate{
+                flex-direction: column;
+                text-align: center;
+                span{
+                    margin-top: 15px;
+                    margin-left: 0;
+
+                    &::after{
+                        left: 50%;
+                        top: 20px;
+                        transform: translateX(-50%);
+                    }
+                }
+            }
+        }
+        
+    }
 }

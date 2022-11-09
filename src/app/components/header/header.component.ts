@@ -21,6 +21,7 @@ export class HeaderComponent implements OnInit {
   isNotYetImplemented: boolean = false;
 
   showActMenu = false; 
+  previousUrl: any;
 
   constructor( 
     private router: Router
@@ -30,15 +31,45 @@ export class HeaderComponent implements OnInit {
   }
 
    ngOnInit(): void {
-
+    this.routingEvent();
   }
 
 
-  //Function used to hide or show services bloc when mouse overing the bloc
-  showHideServices(): void{
-    var serviceBottom = <HTMLElement>document.querySelector(".services-bloc ul");
-    serviceBottom.classList.toggle("show-services-bottom");
+  routingEvent(){
+    this.router.events.subscribe( event =>{
+
+      if(event instanceof NavigationEnd){
+
+        if(this.isFirstNavigation){
+          this.isFirstNavigation = false;
+          this.previousUrl = event.url ;
+          return ;
+        }
+
+        else{
+          if(this.previousUrl == event.url){
+            return ;
+          }
+
+          let navSmallScreen = <HTMLElement>document.querySelector('.header-right');
+          let header = <HTMLElement>document.querySelector('header');
+          let inputstatus = <HTMLInputElement>document.querySelector('.burger input');
+        
+          if(this.isBurgerMenuClicked ){
+            this.previousUrl = event.url ;
+            inputstatus.checked = false;
+            navSmallScreen.classList.toggle("toggle-nav");
+            this.isBurgerMenuClicked = false;  
+          }      
+        }
+      }
+  
+
+        
+        
+    })
   }
+
 
   //Handling click on burger menu
   onBurgerMenu(){

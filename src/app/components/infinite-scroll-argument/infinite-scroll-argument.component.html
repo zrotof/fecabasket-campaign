@@ -3,14 +3,11 @@
     <div class="infinite-swiper">
         <swiper
         
-        [spaceBetween]="10"
+        [spaceBetween]="5"
         [loop]="true"
         [autoplay]="{
           delay: 5000,
           disableOnInteraction: true
-        }"
-        [pagination]="{
-          clickable: true
         }"
         [navigation]="true"
 
@@ -19,11 +16,11 @@
         slidesPerView: 2,
         spaceBetween: 20
       },
-      '768': {
-        slidesPerView: 4,
+      '920': {
+        slidesPerView: 3,
         spaceBetween: 40
       },
-      '1024': {
+      '1230': {
         slidesPerView: 4,
         spaceBetween: 50
       }

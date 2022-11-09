@@ -34,7 +34,7 @@ header{
             }
         }
         
-        .right{
+        .header-right{
 
             display: flex;
             align-items: center;
@@ -172,12 +172,15 @@ header{
 
         .content{
 
+            .logo{
+                font-size: 1.6em;
+            }
+
             .header-right{
                 font-weight: 450;
                 font-size: 14px;
 
                 nav{
-                    margin-right: 35px;
 
                     ul{
                         li{
@@ -194,7 +197,8 @@ header{
     }
 }
 
-@media all and (max-width: 850px){
+
+@media all and (max-width: 744px){
 
     header{
 
@@ -212,12 +216,13 @@ header{
                 padding: 30px;
                 transform: translateX(100%);
 
-
-                background-color: black;
+                background-color: rgb(255, 255, 255);
                 padding-right: 20px;
 
                 nav{
 
+                    align-items: flex-end;
+                    flex-direction: column;
                     margin: 0;
                     padding: 0;
 
@@ -231,46 +236,18 @@ header{
                             font-size: 1.25em;
                         }    
 
-                        .services-bloc{
-                            align-items: flex-end;
+                    }
 
-                            .services{
-                                flex-direction: row-reverse;
+                    button{
+                        margin-right: 12px;
+                        margin-top: 20px;
+                        font-size: 1.25em;
 
-                                fa-icon{
-                                    margin: 0 7px 0 0;
-                                }
-                            }
-
-                            .show-services-bottom{
-        
-                                position: relative;
-                                top: 0;
-                                padding-right: 20px;
-                                left: 0;
-                                transform: none;
-                                margin-top: 20px;
-                                padding: 0 20px 0 0;
-
-                                li{
-                                    margin: 5px 0;
-                                }
-        
-                            }
+                        .menus{
+                            right: -12px;
                         }
                     }
                 }
-
-                .currencies{
-                    margin: 20px 0 0 0;
-                    font-size: 1.1em;
-                }
-
-                .languages{
-                    border: solid white;
-                    display: none;
-                }
-                
 
             }
 
@@ -318,7 +295,7 @@ header{
                     height: 2px;
                     position: relative;
                     
-                    background: white;
+                    background: rgb(0, 0, 0);
                     border-radius: 3px;
                     
                     z-index: 1;

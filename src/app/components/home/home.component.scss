@@ -9,13 +9,14 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-image: url("../../../assets/img/home/image.jpeg");
+        background-image: url("../../../assets/img/home/background.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
         width: 100%;
         height: 80vh;
+        overflow: hidden;
 
         &::after{
             position: absolute;
@@ -24,7 +25,6 @@
             content: "";
             top: 0;
             left: 0;
-            background: linear-gradient(90deg, #02002442 0%, #090979c4 35%, rgba(0, 212, 255, 0) 100%);
             z-index: 0;
         }
 
@@ -46,29 +46,39 @@
             }
 
             .texts{
+                position: relative;
                 display: flex;
                 flex-direction: column;
                 color: white;
                 margin: 39px 0 0 50%;
                 z-index: 1;
+                padding: 20px;
+                /* border: 1px solid #4e4e4e82; */
+                box-shadow: 0 8px 32px 0 rgb(0 0 0 / 34%);
+                backdrop-filter: blur( 4px );
+                border-radius: 5px;
 
                 span:first-child{
                     align-self: flex-start;
                     font-style: italic;
                     font-weight: 900;
+                    text-shadow: 1px 1px 2px #4e4e4e;
                 }
 
                 h1{
-                    margin-bottom: 15px;
+                    font-family: 'gistesy';
+                    margin: 15px 0;
                     color: #f56f36;
                     font-weight: 900;
                     font-size: 4em;
+                    text-shadow: 1px 1px 2px black;
                 }
 
                 span{
                     line-height: 28px;                
                     font-size: 22px;
                     font-weight: 100;
+                    text-shadow: 1px 1px 2px #202020;
                 }
                 
 
@@ -81,7 +91,7 @@
                     cursor: pointer;
                     transition: all 0.2s ease-in;
                     font-weight: 700;
-                    font-size: 1.05em;
+                    font-size: 1.02em;
                     border: none;
 
                     &:hover{
@@ -91,6 +101,20 @@
                 }
             }
         }
+
+        .ball{
+            position: absolute;
+            right: -10%;
+            bottom: -15%;
+            background-image: url("../../../assets/img/home/ball.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 23em;
+            height: 23em;
+        }
+
+
 
     }
 

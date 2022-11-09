@@ -30,9 +30,9 @@ export class TestimoniesComponent implements OnInit {
   getTestimoniesList(){
     return [
       {
-        image: "../../assets/img/home/candidates/image.jpeg",
-        message: "Je suis un témoignage. Cliquez pour me modifier et valoriser votre activité. Vos clients peuvent ici partager leur expérience.Vos clients peuvent ici partager leur expérience. Vos clients peuvent ici partager leur expérience.",
-        name: "Mbah Mouté",
+        image: "../../../assets/img/home/testimonies/luc_mbah_a_moute.jpg",
+        message: "Au vu de ce que le Président Yves Tsala a réalisé à la ligue du centre, je suis persuadé que le basketball camerounais prend la route du développement... avec tout l'engouement que dégage sa candidature, il est évident que je le soutien à 100%!",
+        name: "Luc Mbah A Moute",
         role:"Ex-joueur NBA"
       },
       {
@@ -42,9 +42,9 @@ export class TestimoniesComponent implements OnInit {
         role:"Ex-joueur NBA"
       },
       {
-        image: "../../assets/img/home/candidates/image.jpeg",
-        message: " pour me modifier et valoriser votre activité. Vos clients peuvent ici partager leur expérience.Vos clients peuvent ici partager leur expérience. Vos clients peuvent ici partager leur expérience.",
-        name: "Patrick boma",
+        image: "../../../assets/img/home/testimonies/brice_vounang.jpg",
+        message: "Apporter mon soutien total à la candidature du Président Yves Tsala. Les enjeux sont si important qu'il faut que tout les acteurs se mobilisent ...",
+        name: "Brice Vounang",
         role:"Ex-joueur NBA"
       },
       {

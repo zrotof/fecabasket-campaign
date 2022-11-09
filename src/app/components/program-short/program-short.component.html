@@ -8,7 +8,40 @@
     </div>
 
     <div class="content my-container">
-        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis eveniet iste vel obcaecati, quis cum corporis, cumque non accusamus amet possimus. Consectetur quisquam non ipsa, ex facere debitis assumenda natus!</span>
-    </div>
+
+        
+        <p-accordion>
+            <ng-template ngFor let-program [ngForOf]="programs"; let-i="index">
+                <p-accordionTab header={{program.label}} [selected]=" i == 0 ? true : false">
+                    <div class="accordion-content">
+                        <div class="images">
+                            <swiper
+                            [spaceBetween]="30"
+                            [centeredSlides]="true"
+                            
+                            [pagination]="{
+                            clickable: true
+                            }"
+                            [navigation]="true"
+                            class="mySwiper"
+                        >
+                            <ng-template  ngFor let-image [ngForOf]="program.data.images">
+                                <ng-template swiperSlide>
+                                    <img src={{image.source}} alt="">
+                                </ng-template>
+                            </ng-template>
+                            
+                        </swiper>
+                        </div>
+                        <div class="texts">
+                            <ng-template ngFor let-text [ngForOf]="program.data.texts">
+                                <p> {{text.text}} </p>
+                            </ng-template>
+                        </div>
+                    </div>
+                </p-accordionTab>
+            </ng-template>
+        </p-accordion>
+</div>
 
 </div>
