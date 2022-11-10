@@ -51,10 +51,7 @@ $colorBlue: #15385c;
         width: 100%;
         height: 100%;
 
-        .sharing-ways{
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .contact-ways{
             background: white;
             box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px, rgb(0 0 0 / 30%) 0px 1px 3px -1px;
             padding: 50px 100px;
@@ -63,12 +60,8 @@ $colorBlue: #15385c;
             position: relative;
 
             .ways-contener{
-                display: flex;
-                align-items: center;
-                justify-content: center;
                 border-radius: 5px;
                 border: 1px solid #aeaeae;
-                flex-direction: column;
                 width: 440px;
 
                 a{
@@ -127,3 +120,108 @@ $colorBlue: #15385c;
         
     }
 }
+
+@media all and (max-width: 1180px){
+
+    .contact{
+
+        .content{
+
+            .contact-ways{
+                padding: 45px 75px
+            }
+        }
+        
+    }
+}
+
+@media all and (max-width: 770px){
+
+    .contact{
+        .content{
+            .contact-ways{
+                padding: 0;
+                position: unset;
+                margin-bottom: 100px;
+
+                .ways-contener{
+                    width: 340px;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 520px){
+
+    .contact{
+        .title{
+            min-height: fit-content;
+            .top-content{
+    
+    
+                h1{
+                    width: 100%;
+                    font-size: 2em;
+                    margin-bottom: 25px;
+                }
+    
+                p{
+                    max-width: 100%;
+                    line-height: 25px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .content{
+            .contact-ways{
+                width: 80%;
+                margin-bottom: 60px;
+
+                .ways-contener{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 425px){
+
+    .contact{
+        .content{
+            .contact-ways{
+                width: 100%;
+
+                .ways-contener{
+
+                    a{
+                        padding: 15px 15px;
+                        font-size: 1em;
+                        cursor: pointer;
+                        color: rgb(41, 41, 41);
+                        justify-content: center;
+                        &:hover{
+                            box-shadow: hsla(18, 91%, 59%, 0.826) 0px 3px 8px;
+                        }
+    
+                        i{
+                            margin-right: 10px;
+                            font-size: 1.5em;
+                        }
+    
+                        &:last-child{
+                            border-bottom: none;
+                        }
+    
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+    

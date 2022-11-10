@@ -18,7 +18,7 @@
                                 <p class="header"> {{event.title}} </p>
                                 <p class="date">{{event.date}}, <span>{{event.hour}}</span> </p>
                             <p class="text">{{event.text}}</p>
-                            <p class="video"*ngIf="event.link"> <i class="pi pi-youtube"></i> {{event.link}}</p>
+                            <a href="https://youtu.be/8F1pCiB3n5o" target="_blank" class="video"*ngIf="event.link"> <i class="pi pi-youtube"></i> Voir la vidéo</a>
                             </div>
                             <img src={{event.image}} alt="">
                         </div>

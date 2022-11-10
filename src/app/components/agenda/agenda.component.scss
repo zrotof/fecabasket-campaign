@@ -89,6 +89,8 @@ $colorBlue: #15385c;
                                 }
 
                                 .video{
+                                    text-decoration: none;
+                                    color: rgb(34, 34, 34);
                                     display: flex;
                                     margin-top: 20px;
                                     align-items: center;
@@ -114,5 +116,118 @@ $colorBlue: #15385c;
                         }
                     }
     
+    }
+}
+
+@media all and (max-width: 1120px){
+
+    .agenda{
+
+        .content{
+
+            .events{
+
+                max-width: 90%;
+
+                .event{
+                    img{
+                        height: 160px;
+                    }
+                }
+
+            }
+        
+        }
+   
+    }
+}
+
+@media all and (max-width: 880px){
+
+    .agenda{
+        .content{
+            .events{
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 680px){
+
+    .agenda{
+        .content{
+            .events{
+                .event{
+                    flex-direction: column-reverse;
+                    text-align: center;
+                    align-items: center;
+
+                    img{
+                        width: 370px;;
+                        height: 200px;
+                        margin-bottom: 15px;
+                    }
+
+                    .left{
+                        margin: 0;
+                        align-items: center;
+                        
+                    }
+
+                    
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 520px){
+
+    .agenda{
+        .title{
+            min-height: fit-content;
+            .top-content{
+    
+    
+                h1{
+                    width: 100%;
+                    font-size: 2em;
+                    margin-bottom: 25px;
+                }
+    
+                p{
+                    max-width: 100%;
+                    line-height: 25px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        .content{
+
+.p-tabview .p-tabview-panels {
+padding: 0;
+}
+            .events{
+                .event{
+             
+                    width: 100%;
+                    img{
+                        width: 100%;
+                        height: 160px;
+                        margin-bottom: 15px;
+                    }
+
+                    .left{
+                        width: 100%;
+                        
+                    }
+
+                    
+                }
+            }
+        }
+   
     }
 }

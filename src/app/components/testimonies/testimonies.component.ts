@@ -45,7 +45,7 @@ export class TestimoniesComponent implements OnInit {
         image: "../../../assets/img/home/testimonies/brice_vounang.jpg",
         message: "Apporter mon soutien total à la candidature du Président Yves Tsala. Les enjeux sont si important qu'il faut que tout les acteurs se mobilisent ...",
         name: "Brice Vounang",
-        role:"Ex joueur NBA"
+        role:"Ex international camerounais"
       },
       {
         image: "../../assets/img/home/testimonies/brice_bisseni.jpg",

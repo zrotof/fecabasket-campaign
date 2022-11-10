@@ -49,7 +49,6 @@ export class AgendaComponent implements OnInit {
       date: "10 Novembre 2022",
       hour: "à partir de 10h00",
       text: "Dans toutes les ligues d'Arrondissement existantes. Le lieux étant arrêté par les Présidents des ligues existantes et la Délégation d'Arrondissement le cas échéant. Information à relayer à l'instance supérieur au plus tard 48h avant la tenue.",
-      link: "ok",
       image: "../../../assets/img/agenda/election.jpeg"
     },
     {
@@ -57,7 +56,7 @@ export class AgendaComponent implements OnInit {
       date: "05 novembre 2022",
       hour: "10h00",
       text: "Le 05 novembre 2022 à 10h00, Yves Tsala prononçait une allocution suite au dépôt de sa candidature aux élections du bureau national fédéral de la fecabasket. Il s’est exprimé dans la salle VIP au Palais des Sports de Yaoundé, puis devant la foule présente devant les lieux.",
-      link: "",
+      link: "https://youtu.be/8F1pCiB3n5o",
       image: "../../../assets/img/agenda/campain-crtv.png"
     }
   ];

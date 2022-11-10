@@ -52,26 +52,26 @@ $colorBlue: #15385c;
         width: 100%;
         display: flex;
         flex-direction: column;
-        margin: 50px 0 80px 0;
+        padding-bottom: 80px;
 
-        h2{
-            color: #f56f36;
-            margin-bottom: 50px;
-            border-radius: 3px;
-
-            span{
-                padding: 10px 25px;
-                color: white;
-                background-color: #15385c;
-                font-weight: bold;
-                margin-right: 5px;
+            h2{
+                color: #f56f36;
+                margin-bottom: 50px;
                 border-radius: 3px;
+    
+                span{
+                    padding: 10px 25px;
+                    color: white;
+                    background-color: #15385c;
+                    font-weight: bold;
+                    margin-right: 5px;
+                    border-radius: 3px;
+                }
             }
-        }
+        
 
         .videos{
             display: flex;
-            flex-wrap: wrap;
             justify-content: space-between;
             margin: 60px 0;
 
@@ -120,7 +120,6 @@ $colorBlue: #15385c;
 
                 .video-title{
                     margin: 10px;
-                    font-size: 1.1em;
                 }
 
                 .clock{
@@ -143,6 +142,7 @@ $colorBlue: #15385c;
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
 
         .image-texts{
             display: flex;
@@ -176,28 +176,253 @@ $colorBlue: #15385c;
                     font-size: 1em;
                 }
 
-                button{
-                    border: none;
-                    padding: 10px;
-                    width: fit-content;
-                    border-radius: 2px;
+                .buttons{
                     display: flex;
-                    justify-content: center;
-                    color: #15385d;
-                    cursor: pointer;
-                    transition: all 0.2s ease-in-out;
-                    margin-top: 30px;
-                    background: white;
-                    border: 2px solid #15385d;
-    
-                    &:hover{
-                        background: #15385d;
-                        color: white;
+
+                    button{
+                        width: 197px;
+                        border: none;
+                        padding: 10px;
+                        border-radius: 2px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: #15385d;
+                        cursor: pointer;
+                        transition: all 0.2s ease-in-out;
+                        margin-top: 30px;
+                        background: white;
+
+                        i{
+                            font-size: 1.4em;
+                            margin-right: 10px;
+                        }
                     }
+
+                    .share{
+                        border: 2px solid #15385d;
+        
+                        &:hover{
+                            background: #15385d;
+                            color: white;
+                        }
+                    }
+
+                    .donate{
+                        border: 2px solid #f56f36;
+                        background-color: #f56f36;
+                        margin-left: 15px;
+                        color: white;
+
+                        &:hover{
+                            background: white;
+                            color: #f56f36;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+    @media all and (max-width: 1020px){
+
+        .program{
     
-                    i{
-                        font-size: 1.4em;
-                        margin-right: 10px;
+            .program-videos{
+                
+                overflow: hidden;
+
+                .videos{
+                    overflow-x: scroll;
+                    padding: 30px 0;
+                    margin: 30px 0 0 0;
+
+                    .video{
+
+                        flex: 1 0 auto;
+                        width: 300px;
+                        margin: 0 10px;
+                        &::after{
+                            height: 200px;
+                        }
+    
+                        img{
+                            height: 200px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+@media all and (max-width: 865px){
+
+    .program{
+
+        .program-videos{
+
+            h2{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                margin-bottom: 0;
+
+                span{
+                    margin-right: 0px;
+                    margin-bottom: 15px;
+                    border-radius: 3px;
+                }
+            }
+
+            span{
+                text-align: center;
+                margin-top: 30px;
+            }
+        }
+
+        .blue-box{
+            width: 100%;
+
+            .image-texts{
+
+                img{
+                    width: 250px;
+                }
+
+                .texts{
+                    padding: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 755px){
+
+    .program{
+
+        .blue-box{
+            width: 100%;
+
+            .image-texts{
+                
+                img{
+                    width: 250px;
+                }
+
+                .texts{
+                    
+                    .buttons{
+                        flex-direction: column;
+
+                        button{
+                            margin-top: 15px;
+                        }
+
+                        .donate{
+                            margin-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 685px){
+
+    .program{
+
+        .blue-box{
+            width: 100%;
+
+            .image-texts{
+                flex-direction: column;
+                align-items: center;
+                box-shadow: none;
+                overflow: unset;
+
+                img{
+                    border-radius: 5px;
+                    width: 335px;
+                    margin-bottom: 20px;
+                }
+
+                .texts{
+                    padding: 0;
+                    text-align: center;
+                    align-items: center;
+
+                    .buttons{
+                        flex-direction: row;
+
+                        button{
+                            margin-top: 15px;
+                        }
+
+                        .donate{
+                            margin-left: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 520px){
+
+    .program{
+        .title{
+            min-height: fit-content;
+            .top-content{
+    
+    
+                h1{
+                    width: 100%;
+                    font-size: 2em;
+                    margin-bottom: 25px;
+                }
+    
+                p{
+                    max-width: 100%;
+                    line-height: 25px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 465px){
+
+    .program{
+
+        .blue-box{
+            .image-texts{
+
+                img{
+                    width: 100%;
+                }
+
+                .texts{
+                    width: 100%;
+
+                    .buttons{
+                        flex-direction: column;
+                        align-items: center;
+
+                        button{
+                            margin-top: 15px;
+                        }
+
+                        .donate{
+                            margin-left: 0;
+                        }
                     }
                 }
             }
