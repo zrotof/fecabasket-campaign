@@ -9,7 +9,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-image: url("../../../assets/img/home/background.jpg");
+        background-image: url("../../../assets/img/home/background.png");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -17,6 +17,7 @@
         width: 100%;
         height: 80vh;
         overflow: hidden;
+
 
         &::after{
             position: absolute;
@@ -29,40 +30,38 @@
         }
 
         .hero-content{
-
-            position: relative;
             height: 100%;
             width: 100%;
             display: flex;
             align-items: center;
+            justify-content: space-evenly;
+            margin-top: 100px;
 
             img{
-                position: absolute;
                 bottom: 0;
-                width: 44vh;
-                left: 10%;
+                width: 45vh;
                 z-index: 1;
-
+                border-radius: 50%;
             }
 
             .texts{
-                position: relative;
                 display: flex;
                 flex-direction: column;
                 color: white;
-                margin: 39px 0 0 50%;
                 z-index: 1;
-                padding: 20px;
-                /* border: 1px solid #4e4e4e82; */
-                box-shadow: 0 8px 32px 0 rgb(0 0 0 / 34%);
-                backdrop-filter: blur( 4px );
                 border-radius: 5px;
+                width: 423px;
+                align-items: center;
+                font-size: 1.2em;
 
                 span:first-child{
                     align-self: flex-start;
                     font-style: italic;
                     font-weight: 900;
                     text-shadow: 1px 1px 2px #4e4e4e;
+                    font-size: 1.3em;
+                    width: 100%;
+                    text-align: center;
                 }
 
                 h1{
@@ -74,13 +73,14 @@
                     text-shadow: 1px 1px 2px black;
                 }
 
-                span{
+                .text{
                     line-height: 28px;                
-                    font-size: 22px;
+                    font-size: 1.25em;
                     font-weight: 100;
                     text-shadow: 1px 1px 2px #202020;
+                    width: 100%;
+                    text-align: center;
                 }
-                
 
                 button{
                     width: fit-content;
@@ -99,6 +99,7 @@
                         color: white;
                     }
                 }
+
             }
         }
 
@@ -151,3 +152,209 @@
         }
     }
 }
+
+@media all and (max-width: 1110px){
+
+    .home{
+
+        .hero{
+
+            .hero-content{
+                img{
+                    left: 4%;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 990px){
+
+    .home{
+
+        .hero{
+
+            height: 70vh;
+
+            .hero-content{
+                img{
+                    left: 4%;
+                    width: 38vh;
+                }
+
+                .texts{
+                    align-items: center;
+                    text-align: center;
+                    width: 335px;
+
+                    span:first-child{
+                        text-shadow: 1px 1px 2px #4e4e4ede;
+                        font-size: 1.15em;
+                        width: 100%;
+                    }
+
+                    h1{
+                        font-size: 3.3em;
+                        text-shadow: 1px 1px 2px #0000009e;
+                    }
+
+                    .text{
+                        line-height: 24px;
+                        text-shadow: 1px 1px 2px #202020bd;
+                        font-size: 1.15em;
+                        
+                    }
+
+                    button{
+                        padding: 7px 10px;
+                        border-radius: 3px;
+                        margin-top: 22px;
+                        border: 2px solid #f56f36;
+                        font-size: 0.9em;
+                    }
+                }
+            }
+
+            .ball{
+                width: 17em;
+                height: 17em;
+            }
+
+            &::after{
+                height: 70vh;
+            }
+        }
+
+        .content{
+
+            h2{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                
+                span{
+                    margin-right: 0px;
+                    margin-bottom: 15px;
+                    border-radius: 3px;
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 960px){
+
+    .home{
+
+        .hero{
+
+            .hero-content{
+                .texts{
+
+                    width: 320px;
+
+                    .text{
+                        line-height: 22px;
+                        font-size: 1.10em;
+                    }
+
+                    button{
+
+                        margin-top: 20px;
+                    }
+                }
+            }
+
+            .ball{
+                width: 15em;
+                height: 15em;
+            }
+        }
+    }
+}
+
+
+@media all and (max-width: 730px){
+
+    .home{
+
+        .hero{
+
+            .hero-content{
+
+                img{
+                    left: 0;
+                }
+
+                .texts{
+
+                    width: 320px;
+
+                    h1{
+                        font-size: 3em;
+                        text-shadow: 1px 1px 2px #000000bf;
+                    }
+
+                    .text{
+                        line-height: 20px;
+                        font-size: 1.05em;
+                    }
+
+                }
+            }
+
+            .ball{
+                width: 13em;
+                height: 13em;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 660px){
+
+    .home{
+
+        .hero{
+            height: fit-content;
+            padding: 5em 0 1em 0;
+
+            .hero-content{
+
+                align-items: center;
+                flex-direction: column;
+                padding: 5em 0 2em 0;
+
+                img{
+                    position: unset;
+                    left: 0;
+                    width: 33vh;
+                }
+                
+                .texts{
+
+                    width: 284px;
+                    margin: 0;
+
+                    h1{
+                        font-size: 3em;
+                        text-shadow: 1px 1px 2px #000000bf;
+                    }
+
+                    .text{
+                        line-height: 20px;
+                        font-size: 1.05em;
+                    }
+
+                }
+            }
+
+            .ball{
+
+                display: none;
+            }
+        }
+    }
+}
+

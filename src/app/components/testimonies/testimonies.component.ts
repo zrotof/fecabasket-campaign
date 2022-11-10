@@ -33,31 +33,31 @@ export class TestimoniesComponent implements OnInit {
         image: "../../../assets/img/home/testimonies/luc_mbah_a_moute.jpg",
         message: "Au vu de ce que le Président Yves Tsala a réalisé à la ligue du centre, je suis persuadé que le basketball camerounais prend la route du développement... avec tout l'engouement que dégage sa candidature, il est évident que je le soutien à 100%!",
         name: "Luc Mbah A Moute",
-        role:"Ex-joueur NBA"
+        role:"Ex joueur NBA"
       },
       {
-        image: "../../assets/img/home/candidates/image.jpeg",
+        image: "../../assets/img/home/testimonies/gaston_kelman.jpg",
         message: "Je suis un témoignage. Cliquez pour me modifier et valoriser votre activité. Vos clients peuvent ici partager leur expérience.Vos clients peuvent ici partager leur expérience. Vos clients peuvent ici partager leur expérience.",
-        name: "Martin Paul Samba",
-        role:"Ex-joueur NBA"
+        name: "Gaston Kelman",
+        role:"Écrivain"
       },
       {
         image: "../../../assets/img/home/testimonies/brice_vounang.jpg",
         message: "Apporter mon soutien total à la candidature du Président Yves Tsala. Les enjeux sont si important qu'il faut que tout les acteurs se mobilisent ...",
         name: "Brice Vounang",
-        role:"Ex-joueur NBA"
+        role:"Ex joueur NBA"
       },
       {
-        image: "../../assets/img/home/candidates/image.jpeg",
+        image: "../../assets/img/home/testimonies/brice_bisseni.jpg",
         message: "Je suis un témoignage. Cliquez pour me modifier et valoriser votre activité. Vos clients peuvent ici partager leur expérience.Vos clients peuvent ici partager leur expérience. Vos clients peuvent ici partager leur expérience.",
-        name: "Roger Mila",
-        role:"Ex-joueur NBA"
+        name: "Brice Bisseni",
+        role:"Ex professionnel français"
       },
       {
-        image: "../../assets/img/home/candidates/image.jpeg",
+        image: "../../assets/img/home/testimonies/sacha_giffa.jpg",
         message: "Je suis un témoignage. Cliquez pour me modifier et valoriser votre activité. Vos clients peuvent ici partager leur expérience.Vos clients peuvent ici partager leur expérience. Vos clients peuvent ici partager leur expérience.",
-        name: "Janet Jackson",
-        role:"Ex-joueur NBA"
+        name: "Sacha Giffa",
+        role:"Ex head coach Lions Cameroun"
       }
     ]
   }

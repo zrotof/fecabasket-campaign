@@ -9,6 +9,7 @@
 
     <div class="content my-container">
             <div class="nav">
+                
                 <ul>
                     <ng-template ngFor let-menu [ngForOf]="menus"; let-i="index">
                         <li>
@@ -16,39 +17,27 @@
                         </li>
                     </ng-template>
                 </ul>
-        </div>
+            </div>
 
         <div class="nav-content">
-            <div *ngIf="activedMenuIndex == 0">
-                <p>On affiche le contenu de la thématique ressources</p>
-            </div>
-            <div *ngIf="activedMenuIndex == 1">
-                <p>On affiche le contenu de la thématique Infrastructures</p>
-            </div>
-            <div *ngIf="activedMenuIndex == 2">
-                <p>On affiche le contenu de la thématique Commisions et Missions</p>
-            </div>
-            <div *ngIf="activedMenuIndex == 3">
-                <p>On affiche le contenu de la thématique Championnats</p>
-            </div>
-            <div *ngIf="activedMenuIndex == 4">
-                <p>On affiche le contenu de la thématique Marketing</p>
-            </div>
-            <div *ngIf="activedMenuIndex == 5">
-                <p>On affiche le contenu de la thématique Gouvernance</p>
-            </div>
-            <div *ngIf="activedMenuIndex == 6">
-                <p>On affiche le contenu de la thématique Formation</p>
-            </div>
-            <div *ngIf="activedMenuIndex == 7">
-                <p>On affiche le contenu de la thématique Direction Technique Nationale</p>
-            </div>
-            <div *ngIf="activedMenuIndex == 8">
-                <p>On affiche le contenu de la thématique Communication</p>
-            </div>
-            <div *ngIf="activedMenuIndex == 9">
-                <p>On affiche le contenu de la thématique Collaboration Internationale</p>
-            </div>
+
+                <img src={{thematiqueImage}}>
+
+                <div class="texts">
+
+                    <h3>Sommaire</h3>
+                    
+                    <ng-template ngFor let-datas [ngForOf]="thematiqueDatas">
+                        <div class="data">
+                            <h4> {{datas.label}} </h4>
+                            <ng-template ngFor let-paragraph [ngForOf]="datas.paragraphs">
+                                <p>{{paragraph.text}} </p>
+                            </ng-template>
+                        </div>
+
+                    </ng-template>
+
+                </div>
         </div>
     </div>
 

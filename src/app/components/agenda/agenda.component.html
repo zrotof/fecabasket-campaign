@@ -7,57 +7,23 @@
         </div>
     </div>
     <div class="content my-container">
-
+        
         <p-tabView>
-            <p-tabPanel header="Tous les événements" (click)="allEvents()">
+            <p-tabPanel header="Tous les événements">
                 <div class="events">
 
-                    <div class="event">
-                        <div class="left">
-                            <p class="header">Va Voter NUPES ! – Émission spéciale de 17h à 22h</p>
-                            <p class="date">17 juin 2022</p>
-                            <p class="text">Le 17 juin 2022, Jean-Luc Mélenchon était l’invité de l’émission « Questions de confiance » sur BFMTV et RMC. Apolline de Malherbe l’a tout d’abord questionné sur le déplacement d’Emmanuel</p>
-                            <p class="video"> <i class="pi pi-youtube"></i> voir la vidéo</p>
+                    <ng-template  ngFor let-event [ngForOf]="events">
+                        <div class="event">
+                            <div class="left">
+                                <p class="header"> {{event.title}} </p>
+                                <p class="date">{{event.date}}, <span>{{event.hour}}</span> </p>
+                            <p class="text">{{event.text}}</p>
+                            <p class="video"*ngIf="event.link"> <i class="pi pi-youtube"></i> {{event.link}}</p>
+                            </div>
+                            <img src={{event.image}} alt="">
                         </div>
-                        <img src="../../assets/img/program/talk.jpeg" alt="">
-                    </div>
-
-                    <div class="event">
-                        <div class="left">
-                            <p class="header">Ce dimanche, ne vous laissez pas imposer les 5 ans qui viennent !</p>
-                            <p class="date">17 juin 2022</p>
-                            <p class="text">Le 17 juin 2022, Jean-Luc Mélenchon était l’invité de l’émission « Questions de confiance » sur BFMTV et RMC. Apolline de Malherbe l’a tout d’abord questionné sur le déplacement d’Emmanuel</p>
-                        </div>
-                        <img src="../../assets/img/program/talk.jpeg" alt="">
-                    </div>
-
-                    <div class="event">
-                        <div class="left">
-                            <p class="header">Va Voter NUPES ! – Émission spéciale de 17h à 22h</p>
-                            <p class="date">17 juin 2022</p>
-                            <p class="text">Le 17 juin 2022, Jean-Luc Mélenchon était l’invité de l’émission « Questions de confiance » sur BFMTV et RMC. Apolline de Malherbe l’a tout d’abord questionné sur le déplacement d’Emmanuel</p>
-                        </div>
-                        <img src="../../assets/img/program/talk.jpeg" alt="">
-                    </div>
-
-                    <div class="event">
-                        <div class="left">
-                            <p class="header">Va Voter NUPES ! – Émission spéciale de 17h à 22h</p>
-                            <p class="date">17 juin 2022</p>
-                            <p class="text">Le 17 juin 2022, Jean-Luc Mélenchon était l’invité de l’émission « Questions de confiance » sur BFMTV et RMC. Apolline de Malherbe l’a tout d’abord questionné sur le déplacement d’Emmanuel</p>
-                        </div>
-                        <img src="../../assets/img/program/talk.jpeg" alt="">
-                    </div>
-
-
-                    <div class="event">
-                        <div class="left">
-                            <p class="header">Va Voter NUPES ! – Émission spéciale de 17h à 22h</p>
-                            <p class="date">17 juin 2022</p>
-                            <p class="text">Le 17 juin 2022, Jean-Luc Mélenchon était l’invité de l’émission « Questions de confiance » sur BFMTV et RMC. Apolline de Malherbe l’a tout d’abord questionné sur le déplacement d’Emmanuel</p>
-                        </div>
-                        <img src="../../assets/img/program/talk.jpeg" alt="">
-                    </div>
+                    </ng-template>
+                   
                 </div>
             </p-tabPanel>
             <p-tabPanel header="Événements passés" (clik)="prevEvents()">
@@ -84,9 +50,12 @@
                 </div>
             </p-tabPanel>
             <p-tabPanel header="Événements prochains" (click)="nextEvents()">
-                <p>Nous n'avons pas encore d'événements de planifiés, veuillez revenir plus tard.</p>
+                <div style="color: red;">
+                    <div style="display: flex;">
+                        <p>Nous n'avons pas encore d'événements de planifiés, veuillez revenir plus tard.</p>
+                    </div>
+                </div>
             </p-tabPanel>
         </p-tabView>
-        
     </div>
 </div>

@@ -23,7 +23,7 @@
                 font-weight: 700;
             }
             p:last-child{
-                font-size: 0.9em;
+                font-size: 0.95em;
                 font-size: 500;
             }
         }
@@ -83,12 +83,7 @@
             font-size: 0.9em;
             margin-top: 20px;
 
-            span:first-child{
-                font-weight: 500;
-                margin: 0 5px;
-            }
-
-            span:last-child{
+            span{
                 font-weight: bold;
                 color: black;
                 position: relative;
@@ -103,7 +98,6 @@
                     position: absolute;
                     bottom: -3px;
                     left: 0;
-
 
                 }
 
@@ -180,13 +174,14 @@
                 flex-direction: column;
                 text-align: center;
                 span{
-                    margin-top: 15px;
-                    margin-left: 0;
+                    padding: 10px 15px;
+                    border: 1px solid black;
+                    width: fit-content;
+                    margin: auto;
+                    margin-top: 10px;
 
                     &::after{
-                        left: 50%;
-                        top: 20px;
-                        transform: translateX(-50%);
+                        content: none;
                     }
                 }
             }

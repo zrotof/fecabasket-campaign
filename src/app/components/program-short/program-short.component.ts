@@ -29,111 +29,11 @@ export class ProgramShortComponent implements OnInit {
   initProgram(){
     return [
       {
-        label: "Ressources",
-        data: {
-          images: [
-            {source: "../../../../assets/img/home/program/ressource/image-one.png"},
-            {source: "../../../../assets/img/home/program/ressource/image-two.png"}
-          ],
-          texts: [
-            {text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eveniet facilis nobis minima doloribus reprehenderit quaerat voluptatum sequi, maiores cumque omnis aliquam natus facere corrupti vero atque, error fugit expedita."},
-            {text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta vel maiores expedita sequi error facere ratione minus, sit laborum quaerat aliquid enim minima! Quis quasi, temporibus omnis sapiente pariatur incidunt. Obcaecati, eos officiis! In maiores magni aliquam exercitationem corporis, officia voluptatem quia ab, molestias ex maxime aperiam esse explicabo dolorem delectus sequi minima debitis nobis nulla velit tempora! Impedit, minima."}
-          
-          ]
-        }
-      },
-      {
-        label: "Infrastructures",
-        data: {
-          images: [
-            {source: "../../../assets/img/home/program/infrastructure/image-one.png"},
-            {source: "../../../assets/img/home/program/infrastructure/image-two.png"}
-          ],
-          texts: [
-            {text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eveniet facilis nobis minima doloribus reprehenderit quaerat voluptatum sequi, maiores cumque omnis aliquam natus facere corrupti vero atque, error fugit expedita."},
-            {text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta vel maiores expedita sequi error facere ratione minus, sit laborum quaerat aliquid enim minima! Quis quasi, temporibus omnis sapiente pariatur incidunt. Obcaecati, eos officiis! In maiores magni aliquam exercitationem corporis, officia voluptatem quia ab, molestias ex maxime aperiam esse explicabo dolorem delectus sequi minima debitis nobis nulla velit tempora! Impedit, minima."}
-          
-          ]
-        }
-      },
-      {
-        label: "Commisions et Missions",
-        data: {
-          images: [
-            {source: "../../../assets/img/home/program/commission_mission/image-one.png"},
-            {source: "../../../assets/img/home/program/commission_mission/image-two.png"},
-            {source: "../../../assets/img/home/program/commission_mission/image-three.png"}
-          ],
-          texts: [
-            {text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eveniet facilis nobis minima doloribus reprehenderit quaerat voluptatum sequi, maiores cumque omnis aliquam natus facere corrupti vero atque, error fugit expedita."},
-            {text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta vel maiores expedita sequi error facere ratione minus, sit laborum quaerat aliquid enim minima! Quis quasi, temporibus omnis sapiente pariatur incidunt. Obcaecati, eos officiis! In maiores magni aliquam exercitationem corporis, officia voluptatem quia ab, molestias ex maxime aperiam esse explicabo dolorem delectus sequi minima debitis nobis nulla velit tempora! Impedit, minima."}
-          
-          ]
-        }
-      },
-      {
-        label: "Championnats",
-        data: {
-          images: [
-            {source: "../../../assets/img/home/program/championnat_nationaux_regionaux/image-one.png"},
-            {source: "../../../assets/img/home/program/championnat_nationaux_regionaux/image-two.png"}
-          ],
-          texts: [
-            {text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eveniet facilis nobis minima doloribus reprehenderit quaerat voluptatum sequi, maiores cumque omnis aliquam natus facere corrupti vero atque, error fugit expedita."},
-            {text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta vel maiores expedita sequi error facere ratione minus, sit laborum quaerat aliquid enim minima! Quis quasi, temporibus omnis sapiente pariatur incidunt. Obcaecati, eos officiis! In maiores magni aliquam exercitationem corporis, officia voluptatem quia ab, molestias ex maxime aperiam esse explicabo dolorem delectus sequi minima debitis nobis nulla velit tempora! Impedit, minima."}
-          
-          ]
-        }
-      },
-      {
-        label: "Marketing",
-        data: {
-          images: [
-            {source: "../../../assets/img/home/program/marketing/image-one.png"},
-            {source: "../../../assets/img/home/program/marketing/image-two.png"},
-            {source: "../../../assets/img/home/program/marketing/image-three.png"}
-          ],
-          texts: [
-            {text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eveniet facilis nobis minima doloribus reprehenderit quaerat voluptatum sequi, maiores cumque omnis aliquam natus facere corrupti vero atque, error fugit expedita."},
-            {text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta vel maiores expedita sequi error facere ratione minus, sit laborum quaerat aliquid enim minima! Quis quasi, temporibus omnis sapiente pariatur incidunt. Obcaecati, eos officiis! In maiores magni aliquam exercitationem corporis, officia voluptatem quia ab, molestias ex maxime aperiam esse explicabo dolorem delectus sequi minima debitis nobis nulla velit tempora! Impedit, minima."}
-          
-          ]
-        }
-      },
-      {
         label: "Gouvernance",
         data: {
           images: [
             {source: "../../../assets/img/home/program/gouvernance/image-one.png"},
             {source: "../../../assets/img/home/program/gouvernance/image-two.png"}
-          ],
-          texts: [
-            {text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eveniet facilis nobis minima doloribus reprehenderit quaerat voluptatum sequi, maiores cumque omnis aliquam natus facere corrupti vero atque, error fugit expedita."},
-            {text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta vel maiores expedita sequi error facere ratione minus, sit laborum quaerat aliquid enim minima! Quis quasi, temporibus omnis sapiente pariatur incidunt. Obcaecati, eos officiis! In maiores magni aliquam exercitationem corporis, officia voluptatem quia ab, molestias ex maxime aperiam esse explicabo dolorem delectus sequi minima debitis nobis nulla velit tempora! Impedit, minima."}
-          
-          ]
-        }
-      },
-      {
-        label: "Formation",
-        data: {
-          images: [
-            {source: "../../../assets/img/home/program/formation/image-one.png"}
-          ],
-          texts: [
-            {text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eveniet facilis nobis minima doloribus reprehenderit quaerat voluptatum sequi, maiores cumque omnis aliquam natus facere corrupti vero atque, error fugit expedita."},
-            {text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta vel maiores expedita sequi error facere ratione minus, sit laborum quaerat aliquid enim minima! Quis quasi, temporibus omnis sapiente pariatur incidunt. Obcaecati, eos officiis! In maiores magni aliquam exercitationem corporis, officia voluptatem quia ab, molestias ex maxime aperiam esse explicabo dolorem delectus sequi minima debitis nobis nulla velit tempora! Impedit, minima."}
-          ]
-        }
-      },
-      {
-        label: "Direction Technique Nationale",
-        data: {
-          images: [
-            {source: "../../../assets/img/home/program/direction_technique_nationale/image-one.png"},
-            {source: "../../../assets/img/home/program/direction_technique_nationale/image-two.png"},
-            {source: "../../../assets/img/home/program/direction_technique_nationale/image-three.png"},
-            {source: "../../../assets/img/home/program/direction_technique_nationale/image-four.png"}
           ],
           texts: [
             {text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eveniet facilis nobis minima doloribus reprehenderit quaerat voluptatum sequi, maiores cumque omnis aliquam natus facere corrupti vero atque, error fugit expedita."},
@@ -158,6 +58,80 @@ export class ProgramShortComponent implements OnInit {
         }
       },
       {
+        label: "Championnats",
+        data: {
+          images: [
+            {source: "../../../assets/img/home/program/championnat_nationaux_regionaux/image-one.png"},
+            {source: "../../../assets/img/home/program/championnat_nationaux_regionaux/image-two.png"}
+          ],
+          texts: [
+            {text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eveniet facilis nobis minima doloribus reprehenderit quaerat voluptatum sequi, maiores cumque omnis aliquam natus facere corrupti vero atque, error fugit expedita."},
+            {text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta vel maiores expedita sequi error facere ratione minus, sit laborum quaerat aliquid enim minima! Quis quasi, temporibus omnis sapiente pariatur incidunt. Obcaecati, eos officiis! In maiores magni aliquam exercitationem corporis, officia voluptatem quia ab, molestias ex maxime aperiam esse explicabo dolorem delectus sequi minima debitis nobis nulla velit tempora! Impedit, minima."}
+          
+          ]
+        }
+      },
+      {
+        label: "Direction Technique Nationale",
+        data: {
+          images: [
+            {source: "../../../assets/img/home/program/direction_technique_nationale/image-one.png"},
+            {source: "../../../assets/img/home/program/direction_technique_nationale/image-two.png"},
+            {source: "../../../assets/img/home/program/direction_technique_nationale/image-three.png"},
+            {source: "../../../assets/img/home/program/direction_technique_nationale/image-four.png"}
+          ],
+          texts: [
+            {text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eveniet facilis nobis minima doloribus reprehenderit quaerat voluptatum sequi, maiores cumque omnis aliquam natus facere corrupti vero atque, error fugit expedita."},
+            {text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta vel maiores expedita sequi error facere ratione minus, sit laborum quaerat aliquid enim minima! Quis quasi, temporibus omnis sapiente pariatur incidunt. Obcaecati, eos officiis! In maiores magni aliquam exercitationem corporis, officia voluptatem quia ab, molestias ex maxime aperiam esse explicabo dolorem delectus sequi minima debitis nobis nulla velit tempora! Impedit, minima."}
+          
+          ]
+        }
+      },
+      {
+        label: "Ressources",
+        data: {
+          images: [
+            {source: "../../../../assets/img/home/program/ressource/image-one.png"},
+            {source: "../../../../assets/img/home/program/ressource/image-two.png"}
+          ],
+          texts: [
+            {text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eveniet facilis nobis minima doloribus reprehenderit quaerat voluptatum sequi, maiores cumque omnis aliquam natus facere corrupti vero atque, error fugit expedita."},
+            {text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta vel maiores expedita sequi error facere ratione minus, sit laborum quaerat aliquid enim minima! Quis quasi, temporibus omnis sapiente pariatur incidunt. Obcaecati, eos officiis! In maiores magni aliquam exercitationem corporis, officia voluptatem quia ab, molestias ex maxime aperiam esse explicabo dolorem delectus sequi minima debitis nobis nulla velit tempora! Impedit, minima."}
+          
+          ]
+        }
+      },
+      {
+        label: "Commisions et Missions",
+        data: {
+          images: [
+            {source: "../../../assets/img/home/program/commission_mission/image-one.png"},
+            {source: "../../../assets/img/home/program/commission_mission/image-two.png"},
+            {source: "../../../assets/img/home/program/commission_mission/image-three.png"}
+          ],
+          texts: [
+            {text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eveniet facilis nobis minima doloribus reprehenderit quaerat voluptatum sequi, maiores cumque omnis aliquam natus facere corrupti vero atque, error fugit expedita."},
+            {text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta vel maiores expedita sequi error facere ratione minus, sit laborum quaerat aliquid enim minima! Quis quasi, temporibus omnis sapiente pariatur incidunt. Obcaecati, eos officiis! In maiores magni aliquam exercitationem corporis, officia voluptatem quia ab, molestias ex maxime aperiam esse explicabo dolorem delectus sequi minima debitis nobis nulla velit tempora! Impedit, minima."}
+          
+          ]
+        }
+      },
+      {
+        label: "Marketing",
+        data: {
+          images: [
+            {source: "../../../assets/img/home/program/marketing/image-one.png"},
+            {source: "../../../assets/img/home/program/marketing/image-two.png"},
+            {source: "../../../assets/img/home/program/marketing/image-three.png"}
+          ],
+          texts: [
+            {text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eveniet facilis nobis minima doloribus reprehenderit quaerat voluptatum sequi, maiores cumque omnis aliquam natus facere corrupti vero atque, error fugit expedita."},
+            {text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta vel maiores expedita sequi error facere ratione minus, sit laborum quaerat aliquid enim minima! Quis quasi, temporibus omnis sapiente pariatur incidunt. Obcaecati, eos officiis! In maiores magni aliquam exercitationem corporis, officia voluptatem quia ab, molestias ex maxime aperiam esse explicabo dolorem delectus sequi minima debitis nobis nulla velit tempora! Impedit, minima."}
+          
+          ]
+        }
+      },
+      {
         label: "Collaboration Internationale",
         data: {
           images: [
@@ -169,7 +143,35 @@ export class ProgramShortComponent implements OnInit {
           
           ]
         }
+      },
+      {
+        label: "Formation",
+        data: {
+          images: [
+            {source: "../../../assets/img/home/program/formation/image-one.png"}
+          ],
+          texts: [
+            {text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eveniet facilis nobis minima doloribus reprehenderit quaerat voluptatum sequi, maiores cumque omnis aliquam natus facere corrupti vero atque, error fugit expedita."},
+            {text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta vel maiores expedita sequi error facere ratione minus, sit laborum quaerat aliquid enim minima! Quis quasi, temporibus omnis sapiente pariatur incidunt. Obcaecati, eos officiis! In maiores magni aliquam exercitationem corporis, officia voluptatem quia ab, molestias ex maxime aperiam esse explicabo dolorem delectus sequi minima debitis nobis nulla velit tempora! Impedit, minima."}
+          ]
+        }
+      },
+      
+      {
+        label: "Infrastructures",
+        data: {
+          images: [
+            {source: "../../../assets/img/home/program/infrastructure/image-one.png"},
+            {source: "../../../assets/img/home/program/infrastructure/image-two.png"}
+          ],
+          texts: [
+            {text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eveniet facilis nobis minima doloribus reprehenderit quaerat voluptatum sequi, maiores cumque omnis aliquam natus facere corrupti vero atque, error fugit expedita."},
+            {text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta vel maiores expedita sequi error facere ratione minus, sit laborum quaerat aliquid enim minima! Quis quasi, temporibus omnis sapiente pariatur incidunt. Obcaecati, eos officiis! In maiores magni aliquam exercitationem corporis, officia voluptatem quia ab, molestias ex maxime aperiam esse explicabo dolorem delectus sequi minima debitis nobis nulla velit tempora! Impedit, minima."}
+          
+          ]
+        }
       }
+
     ]
   }
 }
