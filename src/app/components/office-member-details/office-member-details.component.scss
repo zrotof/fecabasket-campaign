@@ -38,6 +38,68 @@
         flex-direction: column;
         align-items: center;
 
+        .title{
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+            margin-bottom: 37px;
+
+            .left{
+                display: flex;
+                flex-direction: column;
+                margin-right: 20px;
+                
+                .top{
+                    font-size: 2em;
+                    margin-bottom: 0;
+                    font-weight: 700;
+                }
+                .bottom{
+                    text-align: right;
+                }
+            }
+
+            .right{
+                display: flex;
+                flex-direction: column;
+                .top{
+                    display: flex;
+                    align-items: baseline;
+                    margin-bottom: 0;
+                    flex-direction: row;
+                    .main{
+                        color: #ed6e34;
+                        margin-right: 5px;
+                        font-size: 2em;
+                        font-weight: 700;
+                    }
+                    .other{
+                        font-weight: 100;
+                        font-size: 0.9em;
+                    }
+                    
+                }
+
+                .bottom{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: row;
+
+                    .main{
+                        color: #ed6e34;
+                        font-weight: 100;
+                        font-size: 0.9em;
+                    }
+
+                    .other{
+                        font-family: 'gistesy';
+                    }
+                }
+                
+            }
+        }
+
         .top{
             display: flex;
             align-items: center;
@@ -135,5 +197,138 @@
             }
         }
 
+    }
+}
+
+
+
+@media all and (max-width: 1030px){
+
+    ::ng-deep {
+        .p-dialog {
+          width: 80%;
+        }
+    }
+}
+
+@media all and (max-width: 768px){
+
+    ::ng-deep {
+        .p-dialog {
+          width: 100%;
+        }
+    }
+
+    .office-manager-detail{
+        max-height: 100vh;
+
+        .content{
+            width: 100%;
+            padding: 0 20px;
+            .top{
+                margin-bottom: 10px;
+                flex-direction: column;
+                text-align: center;
+
+                img{
+                    width: 180px;
+                    height: 180px;
+                    margin-bottom: 30px;
+                }
+
+                .manager-data{
+                    margin-left: 0;
+
+                    .name{
+                        font-size: 1.05em;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 540px){
+
+    .office-manager-detail{
+
+        .content{
+            .title{
+                margin-bottom: 35px;
+    
+                .left{
+                    margin-right: 15px;
+                    .top{
+                        font-size: 1.4em;
+                    }
+                    .bottom{
+                        font-size: 0.85em;
+                    }
+                }
+    
+                .right{
+                    .top{
+
+                        .main{
+                            font-size: 1.4em;
+                        }
+                        .other{
+                            font-size: 0.85em;
+                        }
+                    }
+    
+                    .bottom{
+                        .main{
+                            font-size: 0.85em;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 425px){
+
+    .office-manager-detail{
+
+        .content{
+            .title{
+    
+                .left{
+                    margin-right: 10px;
+                    .top{
+                        font-size: 1.1em;
+                        letter-spacing: -1px;
+                    }
+                    .bottom{
+                        font-size: 0.85em;
+                        letter-spacing: -1px
+                    }
+                }
+    
+                .right{
+                    .top{
+
+                        .main{
+                            font-size: 1.1em;
+                            letter-spacing: -1px;
+                        }
+                        .other{
+                            font-size: 0.85em;
+                        }
+                    }
+    
+                    .bottom{
+                        .main{
+                            letter-spacing: -1px
+                        }
+                    }
+                    
+                }
+            }
+        }
     }
 }

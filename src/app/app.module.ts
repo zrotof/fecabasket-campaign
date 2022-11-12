@@ -13,6 +13,9 @@ import { TooltipModule } from 'primeng/tooltip';
 import { TabViewModule } from 'primeng/tabview';
 import { StepsModule } from 'primeng/steps';
 import { AccordionModule } from 'primeng/accordion';
+import { SidebarModule } from 'primeng/sidebar';
+import { ButtonModule } from 'primeng/button';
+
 
 import { AppComponent } from './app.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -66,7 +69,9 @@ import { TestimoniesComponent } from './components/testimonies/testimonies.compo
     ToastModule,
     TabViewModule,
     StepsModule,
-    AccordionModule
+    AccordionModule,
+    SidebarModule,
+    ButtonModule
 
   ],
   providers: [],

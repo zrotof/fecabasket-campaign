@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, HostListener, OnInit } from '@angular/core';
+import { AfterViewInit, Component, HostListener, OnInit, ViewEncapsulation } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { faGlobe,faCaretDown, faAngleDown } from '@fortawesome/free-solid-svg-icons'
 
@@ -6,8 +6,10 @@ import { faGlobe,faCaretDown, faAngleDown } from '@fortawesome/free-solid-svg-ic
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
+
 export class HeaderComponent implements OnInit {
 
   faGlobe=faGlobe;
@@ -22,6 +24,8 @@ export class HeaderComponent implements OnInit {
 
   showActMenu = false; 
   previousUrl: any;
+
+  visibleSidebar!: boolean;
 
   constructor( 
     private router: Router
@@ -43,6 +47,7 @@ export class HeaderComponent implements OnInit {
         if(this.isFirstNavigation){
           this.isFirstNavigation = false;
           this.previousUrl = event.url ;
+          this.visibleSidebar = false;
           return ;
         }
 
@@ -50,17 +55,7 @@ export class HeaderComponent implements OnInit {
           if(this.previousUrl == event.url){
             return ;
           }
-
-          let navSmallScreen = <HTMLElement>document.querySelector('.header-right');
-          let header = <HTMLElement>document.querySelector('header');
-          let inputstatus = <HTMLInputElement>document.querySelector('.burger input');
-        
-          if(this.isBurgerMenuClicked ){
-            this.previousUrl = event.url ;
-            inputstatus.checked = false;
-            navSmallScreen.classList.toggle("toggle-nav");
-            this.isBurgerMenuClicked = false;  
-          }      
+          this.visibleSidebar = false;
         }
       }
   
@@ -70,33 +65,4 @@ export class HeaderComponent implements OnInit {
     })
   }
 
-
-  //Handling click on burger menu
-  onBurgerMenu(){
-    let navSmallScreen = <HTMLElement>document.querySelector('.header-right');
-    let inputstatus = <HTMLInputElement>document.querySelector('.burger input');
-    let header = <HTMLElement>document.querySelector('header');
-
-    // À chaque clique sur l'input on vérifie si l'input est cochée
-    if(inputstatus.checked === true){
-      
-      navSmallScreen.classList.toggle("toggle-nav")
-
-      if (window.pageYOffset <= header?.clientHeight) {
-        header.classList.add('navbar-background-on-scroll');
-      }
-      this.isBurgerMenuClicked = true;
-
-    }
-    else{
-      navSmallScreen.classList.toggle("toggle-nav");
-      this.isBurgerMenuClicked = false;
-
-      if(!this.router.url.includes('tourisme/')){
-        if(window.pageYOffset <= header?.clientHeight) {
-          header.classList.remove('navbar-background-on-scroll');
-        }
-      }
-
-    
-  }}}
+}

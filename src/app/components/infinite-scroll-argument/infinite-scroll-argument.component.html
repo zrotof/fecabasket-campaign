@@ -6,22 +6,38 @@
         [spaceBetween]="5"
         [loop]="true"
         [autoplay]="{
-          delay: 5000,
+          delay: 8000,
           disableOnInteraction: true
         }"
 
         [breakpoints]="{
-          '640': {
+          '600': {
+            slidesPerView: 2,
+            spaceBetween: 10
+          },
+          '630': {
             slidesPerView: 2,
             spaceBetween: 20
           },
-          '920': {
+          '670': {
+            slidesPerView: 2,
+            spaceBetween: 50
+          },
+          '950': {
             slidesPerView: 3,
-            spaceBetween: 40
+            spaceBetween: 10
+          },
+          '1100': {
+            slidesPerView: 3,
+            spaceBetween: 20
           },
           '1230': {
             slidesPerView: 4,
-            spaceBetween: 50
+            spaceBetween: 20
+          },
+          '1400': {
+            slidesPerView: 4,
+            spaceBetween: 30
           }
         }"
         

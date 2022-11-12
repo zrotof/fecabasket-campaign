@@ -28,12 +28,11 @@ header{
             text-decoration: none;
             font-weight: 900;
             color: $colorBlue;
-
             span{
                 color: #f56f36;
             }
         }
-        
+
         .header-right{
 
             display: flex;
@@ -153,15 +152,152 @@ header{
                     
                 }
 
-            }
-            
+            }    
         }
 
         .burger{
-
             display: none;
+            button{
+                background: none;
+                border: none;
+                outline: none;
+                color: #15385d;
+                border-radius: 50%;
+
+                &:hover{
+                    background: #15385c;
+                    border: none;
+                    outline: none;
+                    color: white;
+                }
+            }
         }
     }
+
+    p-sidebar{
+        display:none;
+        .p-sidebar-right{
+            background: #15385d;
+
+            .p-sidebar-header{
+                .p-sidebar-icon{
+                    color: white;
+                }
+            }
+
+            .p-sidebar-content{
+                height: 100%;
+                padding-top: 35px !important;
+                nav{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    ul{
+                        list-style: none;
+                        li{
+                            text-align: end;
+                            margin-bottom: 30px;
+                            a{
+                                text-decoration: none;
+                                color: white;
+                            }
+
+                            a:hover,
+                            .active-link{
+                                color: #15395e;
+                                padding: 7px 10px;
+                                background: white;
+                                border-radius: 3px;
+                            }
+                        }    
+                    }
+
+                    button{
+                        border: none;
+                        background: none;
+                        outline: none;
+                        margin-left: 15px;
+                        cursor: pointer;
+                        position: relative;
+                        width: 87px;
+                        height: 48px;
+
+                        &:hover{
+                            
+                            span{
+                                background-color: white;
+                                color: #f56f36;
+                                
+
+                                fa-icon{
+                                    margin-left: 3px;
+                                }
+                            }
+                        }
+
+                        span{
+                            white-space: nowrap;
+                            color: white;
+                            background: #f56f36;
+                            border: 2px solid #f56f36;
+                            font-size: 1em;
+                            white-space: nowrap;
+                            border-radius: 2px;
+                            padding: 10px 20px;
+
+                            fa-icon{
+                                margin-left: 3px;
+                            }
+                        }
+
+                        .menus{
+                            position: absolute;
+                            top: 100%;
+                            right: 0;
+                            background-color: white;
+                            display: flex;
+                            flex-direction: column;
+                            border: 1px solid #828282;
+                            align-items: flex-end;
+                            padding: 10px;
+
+                            a{
+                                text-decoration: none;
+                                padding: 10px 15px;
+                                white-space: nowrap;
+                                width: 100%;
+                                text-align: right;
+                                color: #15385d;
+                                border-radius: 2px;
+                                margin-top: 2px;
+
+                                &:hover{
+                                    background: #15385d;
+                                    color: white;
+                                }
+                            }
+
+                            .active-link{
+                                background: $colorBlue;
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    
+}
+
+.p-sidebar-mask.p-component-overlay {
+    z-index: 12 !important ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -205,129 +341,16 @@ header{
         .content{
 
             .header-right{
-                flex-direction: column;
-                position: absolute;
-                align-items: flex-end;
-                justify-content: flex-start;
-                top: calc(4.5em + 9px);
-                width: 100%;
-                min-height: 100vh;
-                left: 0;
-                padding: 30px;
-                transform: translateX(100%);
-
-                background-color: rgb(255, 255, 255);
-                padding-right: 20px;
-
-                nav{
-
-                    align-items: flex-end;
-                    flex-direction: column;
-                    margin: 0;
-                    padding: 0;
-
-                    ul{
-                        flex-direction: column;
-                        align-items: flex-end;
-                        padding: 0;
-
-                        li{
-                            margin: 20px 0 0 0;
-                            font-size: 1.25em;
-                        }    
-
-                    }
-
-                    button{
-                        margin-right: 12px;
-                        margin-top: 20px;
-                        font-size: 1.25em;
-
-                        .menus{
-                            right: -12px;
-                        }
-                    }
-                }
-
-            }
-
-            .toggle-nav{
-                transform: translateX(0);
-                transition: all 0.3s ease-in-out;
+                display: none;
             }
 
             .burger{
                 display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-                position: relative;
-                z-index: 10;
-                user-select: none;
-                height: 40px;  
-                width: 40px;    
-                padding: 5px;      
-                font-size: 2em;
-                font-weight: bold;
-                border-radius: 50%;
-
-                input{
-                    display: block;
-                    width: 30px;
-                    height: 30px;
-                    position: absolute;
-                    top: 5px;
-                    cursor: pointer;
-                    opacity: 0; /* hide this */
-                    z-index: 2; /* and place it over the hamburger */
-                    user-select: none;
-    
-                }
-    
-                input:checked {
-                    outline:none;
-                    box-shadow: none;
-                }
-                
-    
-                span{
-                    display: block;
-                    width: 30px;
-                    height: 2px;
-                    position: relative;
-                    
-                    background: rgb(0, 0, 0);
-                    border-radius: 3px;
-                    
-                    z-index: 1;
-    
-                    transform-origin: 0% 100%;
-                    
-                    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-                                opacity 0.55s ease;
-                }
-    
-                 
-    
-                    input:checked ~ span{
-                        opacity: 1;        
-                    }
-    
-                    input:checked ~ span:nth-last-child(1){
-                        transform: rotate(-45deg) translate(3.5px, 3.5px);
-                    }
-        
-                    input:checked ~ span:nth-last-child(2)
-                    {
-                        opacity: 0;                
-                    }
-    
-                      input:checked ~ span:nth-last-child(3)
-                    {
-                        transform: rotate(45deg) translate(2px, -4px);
-    
-                    }
             }
-            
+        }
+
+        p-sidebar{
+            display:block;
         }
         
     }
