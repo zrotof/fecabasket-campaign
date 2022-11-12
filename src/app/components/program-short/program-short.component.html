@@ -8,15 +8,12 @@
     </div>
 
     <div class="content my-container">
-
-        
         <p-accordion>
             <ng-template ngFor let-program [ngForOf]="programs"; let-i="index">
                 <p-accordionTab header={{program.label}} [selected]=" i == 0 ? true : false">
                     <div class="accordion-content">
                         <div class="images">
                             <swiper
-                            [spaceBetween]="30"
                             [centeredSlides]="true"
                             
                             [pagination]="{
@@ -24,7 +21,7 @@
                             }"
                             [navigation]="true"
                             class="mySwiper"
-                        >
+                            >
                             <ng-template  ngFor let-image [ngForOf]="program.data.images">
                                 <ng-template swiperSlide>
                                     <img src={{image.source}} alt="">
@@ -42,6 +39,6 @@
                 </p-accordionTab>
             </ng-template>
         </p-accordion>
-</div>
+    </div>
 
 </div>

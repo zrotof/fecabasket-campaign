@@ -178,13 +178,11 @@ header{
         display:none;
         .p-sidebar-right{
             background: #15385d;
-
             .p-sidebar-header{
                 .p-sidebar-icon{
                     color: white;
                 }
             }
-
             .p-sidebar-content{
                 height: 100%;
                 padding-top: 35px !important;
@@ -201,7 +199,6 @@ header{
                                 text-decoration: none;
                                 color: white;
                             }
-
                             a:hover,
                             .active-link{
                                 color: #15395e;
@@ -287,8 +284,6 @@ header{
             }
         }
     }
-
-    
 }
 
 .p-sidebar-mask.p-component-overlay {

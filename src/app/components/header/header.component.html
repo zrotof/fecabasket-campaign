@@ -29,10 +29,11 @@
         
 
     </div>
-    <p-sidebar [(visible)]="visibleSidebar" position="right" [baseZIndex]="100000">
+    <p-sidebar [blockScroll]=true [(visible)]="visibleSidebar" position="right" [baseZIndex]="100000">
         <nav>
             <ul>
-                <li><a rel="canonical" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}" routerLink="/agenda">Agenda</a></li>
+                <li><a rel="canonical" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}" routerLink="/">Accueil</a></li>
+                <li><a rel="canonical" routerLinkActive="active-link" routerLink="/agenda">Agenda</a></li>
                 <li><a rel="canonical" routerLinkActive="active-link" routerLink="/programme">Programme</a></li>
                 <li><a rel="canonical" routerLinkActive="active-link" routerLink="/nous-contacter">Nous contacter</a></li>
             </ul>

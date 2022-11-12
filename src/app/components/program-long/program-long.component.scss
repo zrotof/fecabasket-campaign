@@ -97,8 +97,9 @@ $colorBlue: #15385c;
             margin-top: 75px;
 
             img{
-                width: 25em;
-                margin-right: 140px;
+                width: 30%;
+                margin-left: 7%;
+                height: fit-content;
             }
 
             .texts{
@@ -107,18 +108,154 @@ $colorBlue: #15385c;
                 h3{
                     font-size: 1.6em;
                     font-weight: 900;
-                    margin-bottom: 40px;
+                    margin-bottom: 25px;
                 }
 
                 .data{
                     display: flex;
                     flex-direction: column;
-                    margin-top: 30px;
+                    margin-top: 20px;
+
+                    ul{
+                        padding-left: 35px;
+                    }
 
                     h4{
-                        margin-bottom: 15px;
+                        margin-bottom: 7px;
                         font-size: 1.2em;
                     }
+
+                    p,li{
+                        color: #171717;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1000px){
+    .program-long{
+        .content{
+            .nav{
+                overflow:hidden;
+
+                ul{
+                    flex-wrap: nowrap;
+                    justify-content: flex-start;
+                    overflow-x: scroll;
+
+                    li{
+                        margin: 0 10px 15px 0px;
+                    }
+                }
+            }
+
+            .nav-content{
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                margin-top: 75px;
+    
+                img{
+                    width: 30%;
+                }
+    
+                .texts{
+                    width: 100%;
+    
+                    h3{
+                        font-size: 1.4em;
+                    }
+    
+                    .data{
+                        h4{
+                            font-size: 1.1em;
+                        }
+
+                        p,li{
+                            font-size: 0.9em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 768px){
+    .program-long{
+        .content{
+            padding-top: 3.5em;
+            padding-bottom: 4em;
+            .nav{
+                ul{
+                    li{
+                        button{
+                            border-width: 3px;
+                            padding: 5px 10px;
+                        }
+                    }
+                }
+            }
+
+            .nav-content{
+                flex-direction: column-reverse;
+                align-items: center;
+                margin-top: 50px;
+                img{
+                    width: 50%;
+                    margin-left: 0;
+                }
+    
+                .texts{
+                    text-align: center;
+                    margin-top: 50px;
+                    h3{
+                        font-size: 1.4em;
+                    }
+    
+                    .data{
+                        h4{
+                            font-size: 1.1em;
+                        }
+
+                        p,li{
+                            font-size: 0.9em;
+                        }
+
+                        ul{
+                            text-align: initial;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 580px){
+    .program-long{
+        .title{
+            min-height: fit-content;
+            .top-content{
+                h1{
+                    width: 100%;
+                    font-size: 2em;
+                    margin-bottom: 25px;
+                }
+                p{
+                    max-width: 100%;
+                    line-height: 25px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        .content{
+            .nav-content{
+                img{
+                    width: 260px;
                 }
             }
         }

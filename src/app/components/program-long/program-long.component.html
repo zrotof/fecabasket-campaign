@@ -21,23 +21,35 @@
 
         <div class="nav-content">
 
-                <img src={{thematiqueImage}}>
-
                 <div class="texts">
 
                     <h3>Sommaire</h3>
                     
                     <ng-template ngFor let-datas [ngForOf]="thematiqueDatas">
-                        <div class="data">
+                        <div *ngIf="datas.label == 'Nos propositions';else normal" class="data">
+                            <h4> {{datas.label}} </h4>
+                            <ul>
+                                <ng-template ngFor let-paragraph [ngForOf]="datas.paragraphs">
+                                    <li>{{paragraph.text}} </li>
+                                </ng-template>
+                            </ul>
+                        </div>
+                        
+                        <ng-template #normal >
+                            <div class="data">
                             <h4> {{datas.label}} </h4>
                             <ng-template ngFor let-paragraph [ngForOf]="datas.paragraphs">
                                 <p>{{paragraph.text}} </p>
                             </ng-template>
                         </div>
+                        </ng-template>
 
+                        
                     </ng-template>
 
                 </div>
+
+                <img src={{thematiqueImage}}>
         </div>
     </div>
 

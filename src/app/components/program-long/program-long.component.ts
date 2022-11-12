@@ -60,23 +60,24 @@ export class ProgramLongComponent implements OnInit {
           {
             label: "Constat",
             paragraphs: [
-              {text: "Le basketball au Cameroun ne saurait être limité à sa dimension de simple divertissement."}
+              {text: "Des prises de décisions non concertées et opaques, et une communication aiguisée qui n’a de cible que les membres de l’exécutif sortant."}
             ]
           },
           {
             label: "Nos Projets",
             paragraphs: [
-              {text: "Mettre en place un modèle efficace de gestion qui promeut nos valeurs : le respect, la transparence, l’équité et la passion et l’éthique."}
+              {text: "Faire de l’information un bien commun."}
             ]
           },
           {
             label: "Nos propositions",
             paragraphs: [
-              {text: "Restructurer l’administration fédérale, améliorer les conditions d’accueil et de travail. Également réorganiser les schémas financiers ainsi que la DTN"},
-              {text: "Mettre en œuvre un nouvel organigramme"},
-              {text: "Concevoir un schéma directeur informatique (installation d’un réseau intranet et un système de gestion électronique de nos données)"},
-              {text: "Etablir et aménager d’un siège fédéral"},
-              {text: "Réorganiser la Direction Technique Nationale"}
+              {text: "Etablir de nouvelles règles pour garantir des projets partagés et l’indépendance des parties prenantes"},
+              {text: "Garantir la circulation à l’information"},
+              {text: "Construire des plaquettes d’information"},
+              {text: "Créer une newsletter"},
+              {text: "Refonte complète du site internet"},
+              {text: "Concevoir une charte graphique, création d’un slogan pour la fédération"}
             ]
           }
         ]
