@@ -7,75 +7,133 @@ $colorBlue: #15385c;
     align-items: center;
     min-height: 100vh;
 
-    .title{
-        width: 100%;
-        height: 60vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background: $colorBlue;
-
-        .top-content{
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-            height: 100%;
-            justify-content: center;
-
-            h1{
-                color: #ed6e34 ;
-                width: 460px;
-                text-align: center;
-                margin-top: 90px;
-                font-size: 2.5em;
-                margin-bottom: 30px;
-            }
-
-            p{
-                max-width: 80%;
-                text-align: center;
-                color: white;
-                line-height: 28px;
-            }
-        }
-    }
-
     .content{
         padding-top: 5em;
+        padding-bottom: 1.5em;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        justify-content: space-between;
         width: 100%;
-        height: 100%;
-
-        .ui-steps .ui-steps-item {
-            width: 25%;
-        }
+        height: 100vh;
+        overflow: hidden;
         
-        .ui-steps.steps-custom {
+        .top{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
             margin-bottom: 30px;
+
+            .texts{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                position: relative;
+                width: 100%;
+                height:100%;
+                padding-right: 10%;
+                background-image: url("../../../assets/img/donate/donate-bg.webp");
+                background-size: cover;
+                background-repeat: no-repeat;
+
+                h2{
+                    font-size: 2.5em;
+                    color: #15385c;
+                    margin-bottom: 40px;
+
+                    span{
+                        color: #f56f36;
+                    }
+                }
+
+                .text{
+                    margin-bottom: 15px;
+                }
+
+                p{
+                    margin: 5px 0;
+                    display: flex;
+                    align-items: center;
+
+                    i{
+                        margin-right: 10px;
+                        font-weight: 900;
+                        font-size: 1.2em;
+                        color: #f56f36;
+                    }
+                }
+
+                a{
+                    margin-top: 15px;
+                    padding: 10px 25px;
+                    border: 2px solid #f56f36;
+                    background-color: #f56f36;
+                    color: white;
+                    border-radius: 2px;
+                    display: flex;
+                    font-size: 1em;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    border-radius: 2px;
+                    width:fit-content;
+                    transition: all 0.2s ease-in-out;
+                    text-decoration: none;
+
+                    &:hover{
+                        color: #f56f36;
+                        background-color: white;
+                    }
+
+                    i{
+                        font-weight: 500;
+                        margin-right: 10px;
+                        font-size: 1.5em;
+                    }
+                }
+
+                .reason{
+                    font-weight: 900;
+                    margin-top: 40px;
+                }
+            }
+
+            img{
+                width: 30%;
+                height: 100%;
+                object-fit: cover;  
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;          
+            }
         }
-        
-        .ui-steps.steps-custom .ui-steps-item .ui-menuitem-link {
-            padding: 0 1em;
-            overflow: visible;
+
+        .hashtags{
+            display: flex;
+            width: 100%;
+
+            .tags{
+                white-space:nowrap;
+                animation: scrollTxt 20s linear infinite;
+                span{
+                    color: #000000de;
+                    font-weight: 900;
+                    margin: 0 20px;
+                    font-size: 0.95em;
+
+                    &::first-letter {
+                        color: #f56f36;
+                    }
+                }
+            }
+
+            @keyframes scrollTxt {
+                0%{
+                    transform: translate(0,0);
+                }
+                100%{
+                    transform: translate(-100%,0);
+                }
+            }
         }
-        
-        .ui-steps.steps-custom .ui-steps-item .ui-steps-number {
-            background-color: #0081c2;
-            color: #FFFFFF;
-            display: inline-block;
-            width: 36px;
-            border-radius: 50%;
-            margin-top: -14px;
-            margin-bottom: 10px;
-        }
-        
-        .ui-steps.steps-custom .ui-steps-item .ui-steps-title {
-            color: #555555;
-        }
+
     }
 }

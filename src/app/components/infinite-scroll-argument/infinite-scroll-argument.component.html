@@ -1,49 +1,49 @@
 <div class="arguments">
 
-    <div class="infinite-swiper">
+  <div class="infinite-swiper">
         <swiper
         
-        [spaceBetween]="5"
-        [loop]="true"
-        [autoplay]="{
-          delay: 8000,
-          disableOnInteraction: true
-        }"
+          [spaceBetween]="5"
+          [loop]="true"
+          [autoplay]="{
+            delay: 8000,
+            disableOnInteraction: true
+          }"
 
-        [breakpoints]="{
-          '600': {
-            slidesPerView: 2,
-            spaceBetween: 10
-          },
-          '630': {
-            slidesPerView: 2,
-            spaceBetween: 20
-          },
-          '670': {
-            slidesPerView: 2,
-            spaceBetween: 50
-          },
-          '950': {
-            slidesPerView: 3,
-            spaceBetween: 10
-          },
-          '1100': {
-            slidesPerView: 3,
-            spaceBetween: 20
-          },
-          '1230': {
-            slidesPerView: 4,
-            spaceBetween: 20
-          },
-          '1400': {
-            slidesPerView: 4,
-            spaceBetween: 30
-          }
-        }"
-        
-        class="mySwiper"
-        #swiper
-    >
+          [breakpoints]="{
+            '600': {
+              slidesPerView: 2,
+              spaceBetween: 10
+            },
+            '630': {
+              slidesPerView: 2,
+              spaceBetween: 20
+            },
+            '670': {
+              slidesPerView: 2,
+              spaceBetween: 50
+            },
+            '950': {
+              slidesPerView: 3,
+              spaceBetween: 10
+            },
+            '1100': {
+              slidesPerView: 3,
+              spaceBetween: 20
+            },
+            '1230': {
+              slidesPerView: 4,
+              spaceBetween: 20
+            },
+            '1400': {
+              slidesPerView: 4,
+              spaceBetween: 30
+            }
+          }"
+          
+          class="mySwiper"
+          #swiper
+        >
 
         <ng-template *ngFor="let officeMember of officeMemberList" swiperSlide>
             <div class="mySlide">
@@ -61,6 +61,6 @@
             <button aria-label="navigation à droite" class="prev" (click)="arrowSlide(-1)"><fa-icon [icon]="faChevronLeft"></fa-icon></button>
             <button aria-label="navigation à gauche" class="next" (click)="arrowSlide(1)"><fa-icon [icon]="faChevronRight"></fa-icon></button>
         </div>
-    </div>   
+    </div>
 
 </div>

@@ -16,7 +16,8 @@
             display: flex;
             align-items: center;
             position: relative;
-    
+            justify-content: center;
+            
             .mySlide {
                 
                 justify-content: center;
@@ -123,6 +124,6 @@
 
     @media all and (max-width: 1030px){
         .arguments{
-            padding: 10px;
+            padding: 30px 10px 30px 10px;
         }
     }

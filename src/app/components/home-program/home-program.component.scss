@@ -18,11 +18,17 @@
         .header{
             color: #15385c;
 
-            p{
+            p:first-child{
                 font-size: 2em;
                 font-weight: 700;
+                color: #15385c; 
+                             
+                &::first-letter {
+                    color: #f56f36;
+                }
             }
             p:last-child{
+                color: #15385c;
                 font-size: 0.95em;
                 font-size: 500;
             }

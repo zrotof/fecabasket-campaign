@@ -31,7 +31,7 @@ export class TestimoniesComponent implements OnInit {
     return [
       {
         image: "../../../assets/img/home/testimonies/luc_mbah_a_moute.jpg",
-        message: "Au vu de ce que le Président Yves Tsala a réalisé à la ligue du centre, je suis persuadé que le basketball camerounais prend la route du développement... avec tout l'engouement que dégage sa candidature, il est évident que je le soutien à 100%!",
+        message: "Au vu de ce que le Président Yves Tsala a réalisé à la ligue du centre, je suis persuadé que le basketball camerounais prend la route du développement... avec tout l'engouement que dégage sa candidature, il est évident que je le soutienne à 100%!",
         name: "Luc Mbah A Moute",
         role:"Ex joueur NBA"
       },
@@ -43,15 +43,15 @@ export class TestimoniesComponent implements OnInit {
       },
       {
         image: "../../../assets/img/home/testimonies/brice_vounang.jpg",
-        message: "Apporter mon soutien total à la candidature du Président Yves Tsala. Les enjeux sont si important qu'il faut que tout les acteurs se mobilisent ...",
+        message: "J'apporte mon soutien total à la candidature du Président Yves Tsala. Les enjeux sont si important qu'il faut que tout les acteurs se mobilisent ...",
         name: "Brice Vounang",
         role:"Ex international camerounais"
       },
       {
         image: "../../assets/img/home/testimonies/brice_bisseni.jpg",
-        message: "Je suis un témoignage. Cliquez pour me modifier et valoriser votre activité. Vos clients peuvent ici partager leur expérience.Vos clients peuvent ici partager leur expérience. Vos clients peuvent ici partager leur expérience.",
+        message: "Depuis quelques années déjà, nous voyons les résultas du Président Yves Tsala. Cette réussite contribue fortement à redorer l'image du basketball camerounais. Je vote favorablement pour son projet de développement et je soutiens sa candidature pour devenir le nouveau Président de la FECABASKET",
         name: "Brice Bisseni",
-        role:"Ex professionnel français"
+        role:"Ex  joueur professionnel"
       },
       {
         image: "../../assets/img/home/testimonies/sacha_giffa.jpg",

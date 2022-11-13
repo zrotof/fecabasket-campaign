@@ -148,7 +148,10 @@ export class ProgramShortComponent implements OnInit {
         label: "Formation",
         data: {
           images: [
-            {source: "../../../assets/img/home/program/formation/image-one.png"}
+            {source: "../../../assets/img/home/program/formation/image-one.png"},
+            {source: "../../../assets/img/home/program/formation/image-two.png"},
+            {source: "../../../assets/img/home/program/formation/image-three.png"},
+            {source: "../../../assets/img/home/program/formation/image-four.png"}
           ],
           texts: [
             {text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad eveniet facilis nobis minima doloribus reprehenderit quaerat voluptatum sequi, maiores cumque omnis aliquam natus facere corrupti vero atque, error fugit expedita."},

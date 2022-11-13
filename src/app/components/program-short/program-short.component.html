@@ -3,7 +3,7 @@
     <div class="title">
         <div class="top-content my-container">
             <h1>PROGRAMME EN VERSION COURTE</h1>
-            <p>Pour financer les dépenses liées à l’organisation d’événements, à l’achat de matériel, au fonctionnement de ce site, etc, nous avons besoin du soutien financier de chacun(e) d’entre vous</p>
+            <p>Découvrez mes propositions pour agir et transformer notre potentiel en performance réelle et redonner à tous les acteurs majeurs du baskets-ball camerounais la place qu'ils méritent.</p>
         </div>
     </div>
 
@@ -12,24 +12,29 @@
             <ng-template ngFor let-program [ngForOf]="programs"; let-i="index">
                 <p-accordionTab header={{program.label}} [selected]=" i == 0 ? true : false">
                     <div class="accordion-content">
-                        <div class="images">
+                        <div *ngIf="program.data.images.length > 1; else single" class="images">
                             <swiper
-                            [centeredSlides]="true"
-                            
-                            [pagination]="{
-                            clickable: true
-                            }"
-                            [navigation]="true"
-                            class="mySwiper"
+                                [centeredSlides]="true"
+                                
+                                [pagination]="{
+                                clickable: true
+                                }"
+                                [navigation]="true"
+                                class="mySwiper"
                             >
-                            <ng-template  ngFor let-image [ngForOf]="program.data.images">
-                                <ng-template swiperSlide>
-                                    <img src={{image.source}} alt="">
+                                <ng-template  ngFor let-image [ngForOf]="program.data.images">
+                                    <ng-template swiperSlide>
+                                        <img src={{image.source}} alt="">
+                                    </ng-template>
                                 </ng-template>
-                            </ng-template>
                             
-                        </swiper>
+                            </swiper>
                         </div>
+
+                        <ng-template #single>
+                            <img class="single" src={{program.data.images[0].source}} alt="">
+                        </ng-template>
+
                         <div class="texts">
                             <ng-template ngFor let-text [ngForOf]="program.data.texts">
                                 <p> {{text.text}} </p>

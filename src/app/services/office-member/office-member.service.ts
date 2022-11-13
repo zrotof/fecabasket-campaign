@@ -78,7 +78,7 @@ export class OfficeMemberService {
     {
       id: 3,
       name:"Daniel Ndoumbe",
-      role: "Chef des Financess",
+      role: "Chef des Finances",
       image: "../../assets/img/home/candidates/candidat.jpeg",
       project: [
         { paragraph: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil necessitatibus dicta cum ut odit fuga, harum dolor."},

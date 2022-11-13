@@ -75,8 +75,8 @@ $colorBlue: #15385c;
                             border-width: 7px;
                             border-style: solid;
                             border-image: linear-gradient(90deg, #059e0500 0%, #cf000000 100%);
-                            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-
+                            box-shadow: rgb(6 24 44 / 40%) 0px 0px 0px 2px, rgb(6 24 44 / 65%) 0px 4px 6px -1px, rgb(255 255 255 / 8%) 0px 1px 0px inset;
+                            
                             &:hover{
                                 border-image: linear-gradient(90deg, rgba(21,56,92,1) 44%, rgba(245,111,54,1) 100%) 1;
                             }
@@ -100,6 +100,8 @@ $colorBlue: #15385c;
                 width: 30%;
                 margin-left: 7%;
                 height: fit-content;
+                box-shadow: #15385d 0px 5px 15px;
+                border: 5px solid #15385d;
             }
 
             .texts{

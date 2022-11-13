@@ -3,20 +3,20 @@
     <div class="title">
         <div class="top-content my-container">
             <h1>AGENDA</h1>
-            <p>Pour financer les dépenses liées à l’organisation d’événements, à l’achat de matériel, au fonctionnement de ce site, etc, nous avons besoin du soutien financier de chacun(e) d’entre vous</p>
+            <p>Mon calendrier au service des joueurs, des entraineurs, des officiels, des dirigeants et des électeurs.</p>
         </div>
     </div>
+
     <div class="content my-container">
-        
         <p-tabView>
             <p-tabPanel header="Tous les événements">
                 <div class="events">
 
-                    <ng-template  ngFor let-event [ngForOf]="events">
+                    <ng-template  ngFor let-event [ngForOf]="allEvents">
                         <div class="event">
                             <div class="left">
                                 <p class="header"> {{event.title}} </p>
-                                <p class="date">{{event.date}}, <span>{{event.hour}}</span> </p>
+                                <p class="date">{{event.date.normal}}, <span>{{event.hour}}</span> </p>
                             <p class="text">{{event.text}}</p>
                             <a href="https://youtu.be/8F1pCiB3n5o" target="_blank" class="video"*ngIf="event.link"> <i class="pi pi-youtube"></i> Voir la vidéo</a>
                             </div>
@@ -26,34 +26,37 @@
                    
                 </div>
             </p-tabPanel>
-            <p-tabPanel header="Événements passés" (clik)="prevEvents()">
+            <p-tabPanel header="Événements passés">
                 <div class="events">
-
-                    <div class="event">
-                        <div class="left">
-                            <p class="header">Assemblées Générales Électives </p>
-                            <p class="date">10 Novembre 2022, <span>à partir de 10h00</span> </p>
-                            <p class="text">Le lieux étant arrêté par les Présidents des ligues existantes et la Délégation d'Arrondissement le cas échéant. Information à relayer à l'instance supérieur au plus tard 48h avant la tenue.</p>
-                            <p class="video"> <i class="pi pi-youtube"></i> voir la vidéo</p>
+                    <ng-template  ngFor let-event [ngForOf]="pastEvents">
+                        <div class="event">
+                            <div class="left">
+                                <p class="header"> {{event.title}} </p>
+                                <p class="date">{{event.date.normal}}, <span>{{event.hour}}</span> </p>
+                            <p class="text">{{event.text}}</p>
+                            <a href="https://youtu.be/8F1pCiB3n5o" target="_blank" class="video"*ngIf="event.link"> <i class="pi pi-youtube"></i> Voir la vidéo</a>
+                            </div>
+                            <img src={{event.image}} alt="">
                         </div>
-                        <img src="../../assets/img/program/talk.jpeg" alt="">
-                    </div>
-
-                    <div class="event">
-                        <div class="left">
-                            <p class="header">Assemblées Générales Électives </p>
-                            <p class="date">12 Novembre 2022</p>
-                            <p class="text">Le 17 juin 2022, Jean-Luc Mélenchon était l’invité de l’émission « Questions de confiance » sur BFMTV et RMC. Apolline de Malherbe l’a tout d’abord questionné sur le déplacement d’Emmanuel</p>
-                        </div>
-                        <img src="../../assets/img/program/talk.jpeg" alt="">
-                    </div>
+                    </ng-template>
                 </div>
             </p-tabPanel>
-            <p-tabPanel header="Événements prochains" (click)="nextEvents()">
-                <div style="color: red;">
-                    <div style="display: flex;">
-                        <p>Nous n'avons pas encore d'événements de planifiés, veuillez revenir plus tard.</p>
+            <p-tabPanel header="Événements prochains">
+                <div class="events">
+                    <div class="event" *ngIf="nextEvents.length == 0">
+                        <span>Pas de prochains événements, veuillez revenir plus tard. </span>
                     </div>
+                    <ng-template  ngFor let-event [ngForOf]="nextEvents">
+                        <div class="event">
+                            <div class="left">
+                                <p class="header"> {{event.title}} </p>
+                                <p class="date">{{event.date.normal}}, <span>{{event.hour}}</span> </p>
+                            <p class="text">{{event.text}}</p>
+                            <a href="https://youtu.be/8F1pCiB3n5o" target="_blank" class="video"*ngIf="event.link"> <i class="pi pi-youtube"></i> Voir la vidéo</a>
+                            </div>
+                            <img src={{event.image}} alt="">
+                        </div>
+                    </ng-template>
                 </div>
             </p-tabPanel>
         </p-tabView>
