@@ -144,13 +144,50 @@
             }
         }
 
-        app-infinite-scroll-argument,
+        
         app-home-about,
         app-home-program,
         app-testimonies{
             width: 100%;
         }
     }
+
+        .qg-wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            background-color: #ed6e34;
+
+            .qg-content{
+                width: 100%;
+                app-infinite-scroll-argument{
+                    width: 100%;
+                }
+            }
+        }
+
+        .program-wrapper{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            background-color: #dfdfdf;
+            margin-top: 150px;
+
+            .program-content{
+                padding-top: 3em;
+                padding-bottom: 3em;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                app-infinite-scroll-argument{
+                    width: 100%;
+                }
+            }
+        }
+
 }
 
 @media all and (max-width: 1110px){

@@ -10,7 +10,7 @@ export class OfficeMemberService {
       id: 1,
       name:"Marie-Chantal Zeh",
       role: "1 ère Vice-Présidente",
-      image: "../../assets/img/home/candidates/imag.jpeg",
+      image: "../../assets/img/home/candidates/marie_zeh.jpg",
       project: [
         { paragraph: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil necessitatibus dicta cum ut odit fuga, harum dolor."},
         { paragraph: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil necessitatibus dicta cum ut odit fuga, harum dolor."}
@@ -38,7 +38,7 @@ export class OfficeMemberService {
       id: 2,
       name:"Serge Bangda",
       role: "Secrétaire Général",
-      image: "../../assets/img/home/candidates/image.jpeg",
+      image: "../../assets/img/home/candidates/serge.png",
       project: [
         { paragraph: "Prendre la Présidence de Fédération Camerounaise de Basket-Ball ."},
         { paragraph: "A ce titre, intégrer l’exécutif pour impacter le développement du Basket-Ball au Cameroun."},
@@ -107,7 +107,7 @@ export class OfficeMemberService {
       id: 4,
       name:"Louis Tsoungui",
       role: "Ancien International Camerounais",
-      image: "../../assets/img/home/candidates/tsoungui.jpg",
+      image: "../../assets/img/home/candidates/louis.png",
       project: [
         { paragraph: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil necessitatibus dicta cum ut odit fuga, harum dolor."},
         { paragraph: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil necessitatibus dicta cum ut odit fuga, harum dolor."}
@@ -134,7 +134,7 @@ export class OfficeMemberService {
     {
       id: 5,
       name:"Luc Mbah A Moute",
-      role: "Ancien Joeur NBA",
+      role: "Ancien Joueur NBA",
       image: "../../assets/img/home/candidates/moute.jpg",
       project: [
         { paragraph: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil necessitatibus dicta cum ut odit fuga, harum dolor."},

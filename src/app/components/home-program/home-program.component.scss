@@ -6,7 +6,7 @@
     margin: 40px 0 80px 0;
     
     img{
-        width: 300px;
+        width: 600px;
     }
 
     .texts{
@@ -118,17 +118,25 @@
             }
         }
     }
-
 }
 
-@media all and (max-width: 880px){
+@media all and (max-width: 1245px){
+
+    .program{        
+        img{
+            width: 450px;
+        }
+    }
+}
+
+@media all and (max-width: 1040px){
 
     .program{
 
         flex-direction: column-reverse;
 
         img{
-            width: 250px;
+            width: 550px;
         }
 
         .texts{
@@ -146,22 +154,22 @@
     }
 }
 
-@media all and (max-width: 490px){
-
+@media all and (max-width: 600px){
     .program{
-
         img{
-            width: 220px;
+            width: 100%;
         }
+    }
+}
 
+@media all and (max-width: 490px){
+    .program{
         .texts{
-
             .header{
                 font-size: 1.1em;
             }
 
             .tabs{
-
                 .tab{
                     flex-direction: column;
                     padding: 20px 10px;
