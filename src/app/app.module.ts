@@ -20,7 +20,6 @@ import { ButtonModule } from 'primeng/button';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AgendaComponent } from './components/agenda/agenda.component';
-import { DonationsComponent } from './components/donations/donations.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeAboutComponent } from './components/home-about/home-about.component';
@@ -48,7 +47,6 @@ import { TestimoniesComponent } from './components/testimonies/testimonies.compo
     NotFoundComponent,
     HomeAboutComponent,
     InfiniteScrollArgumentComponent,
-    DonationsComponent,
     ProgramComponent,
     HomeProgramComponent,
     ShareComponent,
