@@ -27,6 +27,8 @@ export class HeaderComponent implements OnInit {
 
   visibleSidebar!: boolean;
 
+  displayMenu: boolean = false;
+
   constructor( 
     private router: Router
    ) {
@@ -63,6 +65,16 @@ export class HeaderComponent implements OnInit {
         
         
     })
+  }
+
+  openMenu(){
+    this.displayMenu = !this.displayMenu;
+  }
+
+  handleClickOnSmallSize(){
+    if(this.displayMenu == true){
+      this.displayMenu = !this.displayMenu;
+    }
   }
 
 }

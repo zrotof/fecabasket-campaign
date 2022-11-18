@@ -8,6 +8,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AppRoutingModule } from './app-routing.module';
 
 import { ToastModule } from 'primeng/toast';
+import { DialogModule } from 'primeng/dialog';
 import { DynamicDialogModule } from 'primeng/dynamicdialog';
 import { TooltipModule } from 'primeng/tooltip';
 import { TabViewModule } from 'primeng/tabview';
@@ -63,6 +64,7 @@ import { TestimoniesComponent } from './components/testimonies/testimonies.compo
     FontAwesomeModule,
     SwiperModule,
     TooltipModule,
+    DialogModule,
     DynamicDialogModule,
     ToastModule,
     TabViewModule,

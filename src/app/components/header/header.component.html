@@ -1,7 +1,7 @@
 <header>
 
     <div class="content my-container">
-        <a routerLink="" class="logo">Yves Tsala<span> 2022</span> </a>
+        <a (click)="handleClickOnSmallSize()" routerLink="" class="logo">Yves Tsala<span> 2022</span> </a>
 
         <div class="header-right">
             <nav>
@@ -9,6 +9,21 @@
                     <li><a rel="canonical" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}" routerLink="/agenda">Agenda</a></li>
                     <li><a rel="canonical" routerLinkActive="active-link" routerLink="/programme">Programme</a></li>
                     <li><a rel="canonical" routerLinkActive="active-link" routerLink="/nous-contacter">Nous contacter</a></li>
+                </ul>
+
+                <ul class="socials">
+                    <li>
+                        <a href="https://www.facebook.com/yvestsala2022" target="_blank"><i class="pi pi-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/yvestsala2022" target="_blank"><i class="pi pi-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCqWnDOIRZ1_xnt9f8qGjRag" target="_blank"><i class="pi pi-youtube"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/yvestsala2022/" target="_blank"><i class="pi pi-instagram"></i></a>
+                    </li>
                 </ul>
 
                 <button (click)="showActMenu = !showActMenu">
@@ -24,49 +39,55 @@
             </nav>
         </div>
 
-        <p-button type="button" class="burger" (click)="visibleSidebar = true" icon="pi pi-bars"></p-button>
-
-        
-
+        <p-button type="button" class="burger" (click)="openMenu()" [icon]="displayMenu == true ? 'pi pi-times' : 'pi pi-bars'"></p-button>
     </div>
-    <p-sidebar [blockScroll]=true [(visible)]="visibleSidebar" position="right" [baseZIndex]="100000">
-        <nav>
-            <ul>
-                <li><a rel="canonical" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}" routerLink="/">Accueil</a></li>
-                <li><a rel="canonical" routerLinkActive="active-link" routerLink="/agenda">Agenda</a></li>
-                <li><a rel="canonical" routerLinkActive="active-link" routerLink="/programme">Programme</a></li>
-                <li><a rel="canonical" routerLinkActive="active-link" routerLink="/nous-contacter">Nous contacter</a></li>
-            </ul>
 
-            <button (click)="showActMenu = !showActMenu">
-                <span>
-                    Agir
-                    <fa-icon [icon]="faAngleDown"></fa-icon>
-                </span>
-                <div class="menus" *ngIf="showActMenu">
-                    <a rel="canonical" routerLinkActive="active-link" routerLink="/partager-la-campagne">Partager la campagne</a>
-                    <a rel="canonical" routerLinkActive="active-link" routerLink="/faire-un-don">Faire un don</a>
-                </div>
-            </button>
-        </nav>
-
-        <div class="socials">
-            <p>Nous suivre</p>
-            <ul>
-                <li>
-                    <a href="https://www.facebook.com/yvestsala2022" target="_blank"><i class="pi pi-facebook"></i></a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/yvestsala2022" target="_blank"><i class="pi pi-twitter"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.youtube.com/channel/UCqWnDOIRZ1_xnt9f8qGjRag" target="_blank"><i class="pi pi-youtube"></i></a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/yvestsala2022/" target="_blank"><i class="pi pi-instagram"></i></a>
-                </li>
-            </ul>
+    <p-dialog 
+        [(visible)]="displayMenu" 
+        position="top" 
+        [modal]="true"
+        [draggable]="false"
+    >
+        <div class="menu-small-screen">
+            <nav>
+                <ul>
+                    <li><a (click)="openMenu()" rel="canonical" routerLinkActive="active-link" routerLink="/agenda">Agenda</a></li>
+                    <li><a (click)="openMenu()" rel="canonical" routerLinkActive="active-link" routerLink="/programme">Programme</a></li>
+                    <li><a (click)="openMenu()" rel="canonical" routerLinkActive="active-link" routerLink="/nous-contacter">Nous contacter</a></li>
+                </ul>
+        
+                <button (click)="showActMenu = !showActMenu">
+                    <span>
+                        Agir
+                        <fa-icon [icon]="faAngleDown"></fa-icon>
+                    </span>
+                    <div class="menus" *ngIf="showActMenu">
+                        <a (click)="openMenu()" rel="canonical" routerLinkActive="active-link" routerLink="/partager-la-campagne">Partager la campagne</a>
+                        <a (click)="openMenu()" rel="canonical" routerLinkActive="active-link" routerLink="/faire-un-don">Faire un don</a>
+                    </div>
+                </button>
+            </nav>
+        
+            <div class="socials">
+                <p>Nous suivre</p>
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/yvestsala2022" target="_blank"><i class="pi pi-facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/yvestsala2022" target="_blank"><i class="pi pi-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCqWnDOIRZ1_xnt9f8qGjRag" target="_blank"><i class="pi pi-youtube"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/yvestsala2022/" target="_blank"><i class="pi pi-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </p-sidebar>
+
+    </p-dialog>
+
 </header>
 
