@@ -8,20 +8,19 @@ header{
     position: fixed;
     z-index: 9999;
     height: 5.5em;
-    padding-top: 10px ;
-    padding-bottom: 10px;
     color: $colorBlue;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-    background-color: white;
+    background: white;
 
     .content{
-
+        background: white;
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 100%;
         width: 100%;
-        
+        z-index: 99;
+
         .logo{
             font-size: 1.8em;
             cursor: pointer;
@@ -186,17 +185,17 @@ header{
         .burger{
             display: none;
             button{
-                background: none;
+                background: #15385c;
                 border: none;
-                outline: none;
-                color: #15385d;
                 border-radius: 50%;
+                border: none;
+                outline: #f56f36;
+                color: white;
+                cursor: pointer;
+                box-shadow: none;
 
                 &:hover{
                     background: #15385c;
-                    border: none;
-                    outline: none;
-                    color: white;
                 }
             }
         }

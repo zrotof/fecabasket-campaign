@@ -29,12 +29,15 @@
 
         <ng-template *ngFor="let testimony of testimoniesList" swiperSlide>
             <div class="mySlide">
-                    <img src={{testimony.image}} alt="">
-                    <div class="texts">
-                        <span class="message">{{testimony.message}}</span>
-                        <span class="name">{{testimony.name}}</span>
-                        <span class="role">{{testimony.role}}</span>
-                    </div>
+              <div class="top">
+                <img src={{testimony.image}} alt="">
+                <span class="message">{{testimony.message}}</span>
+              </div>
+                    
+              <div class="bottom">
+                <span class="name">{{testimony.name}}</span>
+                <span class="role">{{testimony.role}}</span>
+              </div>
             </div>
         </ng-template>
         </swiper>

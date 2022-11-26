@@ -63,13 +63,13 @@ $colorBlue: #15385c;
 
                     li{
                         margin: 0 10px 15px 10px;
-                        width: fit-content;
+                        width: 225px;;
                         white-space: nowrap;
 
                         button{
                             cursor: pointer;
                             background: white;
-                            padding: 10px 20px;
+                            padding: 8px 0;
                             width: 100%;
                             border-radius: 2px;
                             border-width: 7px;
@@ -136,7 +136,7 @@ $colorBlue: #15385c;
     }
 }
 
-@media all and (max-width: 1000px){
+@media all and (max-width: 1270px){
     .program-long{
         .content{
             .nav{
@@ -148,8 +148,28 @@ $colorBlue: #15385c;
                     overflow-x: scroll;
 
                     li{
-                        margin: 0 10px 15px 0px;
+                        margin: 15px 10px 15px 10px;
+                        width: fit-content;
+                        button{
+                            padding: 8px 8px;
+                        }
                     }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1000px){
+    .program-long{
+        .content{
+            .nav{
+                overflow:hidden;
+
+                ul{
+                    flex-wrap: nowrap;
+                    justify-content: flex-start;
+                    overflow-x: scroll;
                 }
             }
 

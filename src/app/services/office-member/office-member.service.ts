@@ -12,27 +12,29 @@ export class OfficeMemberService {
       role: "1 ère Vice-Présidente",
       image: "../../assets/img/home/candidates/marie_zeh.jpg",
       project: [
-        { paragraph: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil necessitatibus dicta cum ut odit fuga, harum dolor."},
-        { paragraph: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil necessitatibus dicta cum ut odit fuga, harum dolor."}
+        { paragraph: "Je répond à l’appel des pratiquantes et pratiquants de la balle orange pour prendre des responsabilités à la FECABASKET."},
+        { paragraph: "Je suis très enthousiaste de mettre mon expérience au service du basket-ball et de contribuer à son développement."},
+        { paragraph: "Je souhaite bien entendu apporter mon toute mon expertise afin de structurer et développer des solutions pour  grossir notre réseau de partenaires."}
       ],
       expectation: [
-        { paragraph: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil necessitatibus dicta cum ut odit fuga, harum dolor."},
-        { paragraph: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil necessitatibus dicta cum ut odit fuga, harum dolor."}
+        { paragraph: "J’aimerais observer une mobilisation totale de la famille basket camerounaise, aussi bien des acteurs locaux que ceux de la diaspora. Notre équipe doit couvrir le terrain et aller à la rencontre des électeurs, dans les régions."},
       ],
       pathway: [
-        { paragraph: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil necessitatibus dicta cum ut odit fuga, harum dolor."},
-        { paragraph: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil necessitatibus dicta cum ut odit fuga, harum dolor."}
+        { paragraph: "Depuis plus de 30 ans, j’ai successivement occupé les postes gestionnaires des ventes chez 3M, de directrice adjointe des ventes dans l’hôtellerie et aujourd’hui directrice régionale des ventes chez MTN Cameroun."}
       ],
       skills: [
         {
-            label: "Lorem",
+            label: "Dirigeante de plusieurs structures de basket-ball notamment YUC basket-ball",
             list: [
-              { paragraph: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil"},
-              { paragraph: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil necessi"}
+              { paragraph: "Organisation de plusieurs évènements liés au basket-ball notamment pour la promotion de la pratique féminine"},
+              { paragraph: "Ancienne capitaine de l’équipe de YUC basket-ball à la faculté des sciences de Yaoundé"},
+              { paragraph: "Quintuple vainqueur de la coupe du Cameroun et du championnat national avec YUC Basket-Ball"},
+              { paragraph: "Ancienne Présidente de l’Association des Vétérans de Libermann à Douala"}
             ]
         }
 
-      ]
+      ],
+      inProgress: false
     },
     {
       id: 2,
@@ -73,7 +75,8 @@ export class OfficeMemberService {
         ]
       }
 
-      ]
+      ],
+      inProgress: false
     },
     {
       id: 3,
@@ -101,7 +104,8 @@ export class OfficeMemberService {
             ]
         }
 
-      ]
+      ],
+      inProgress: true
     },
     {
       id: 4,
@@ -129,13 +133,14 @@ export class OfficeMemberService {
             ]
         }
 
-      ]
+      ],
+      inProgress: true
     },
     {
       id: 5,
       name:"Luc Mbah A Moute",
       role: "Ancien Joueur NBA",
-      image: "../../assets/img/home/candidates/moute.jpg",
+      image: "../../assets/img/home/candidates/moute.jpeg",
       project: [
         { paragraph: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil necessitatibus dicta cum ut odit fuga, harum dolor."},
         { paragraph: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil necessitatibus dicta cum ut odit fuga, harum dolor."}
@@ -157,7 +162,8 @@ export class OfficeMemberService {
             ]
         }
 
-      ]
+      ],
+      inProgress: true
     }
   ]
   constructor() { }

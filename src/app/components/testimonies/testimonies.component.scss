@@ -11,23 +11,34 @@
         .infinite-swiper{
             width: 100%;
             display: flex;
-            align-items: center;
             position: relative;
     
             .mySlide {
-                justify-content: center;
+                justify-content: space-between;
                 align-items: center;
                 display: flex;
                 flex-direction: column;
-    
-                img{
-                    height: 10em;
-                    width: 10em;
-                    border-radius: 50%;
-                    object-fit: cover;
+                height: 100%;
+
+                .top{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;                
+
+                    img{
+                        height: 10em;
+                        width: 10em;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+                    .message{
+                        font-size: 0.9em;
+                        text-align: justify;
+                        margin: 10px 0;
+                    }
                 }
-    
-                .texts{
+
+                .bottom{
                     display: flex;
                     flex-direction: column;
                     align-items:center;
@@ -40,12 +51,6 @@
                         
                     }
     
-                    .message{
-                        font-size: 0.9em;
-                        text-align: justify;
-                        margin: 10px 0;
-                    }
-
                     .role{
                         font-size: 0.8em;
                         margin-top: 5px;

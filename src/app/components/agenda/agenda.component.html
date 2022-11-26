@@ -13,12 +13,22 @@
                 <div class="events">
 
                     <ng-template  ngFor let-event [ngForOf]="allEvents">
-                        <div class="event">
+                        <div class="event" (click)="showVideo(event.link, event.source)">
                             <div class="left">
                                 <p class="header"> {{event.title}} </p>
                                 <p class="date">{{event.date.normal}}, <span>{{event.hour}}</span> </p>
-                            <p class="text">{{event.text}}</p>
-                            <a href="https://youtu.be/8F1pCiB3n5o" target="_blank" class="video"*ngIf="event.link"> <i class="pi pi-youtube"></i> Voir la vidéo</a>
+                                <p class="text">{{event.text}}</p>
+                                <div class="video-bloc" *ngIf="event.link">
+                                    <span *ngIf="event.source== 'youtube'" class="video youtube">
+                                        <i class="pi pi-youtube"></i> 
+                                        Voir la vidéo
+                                    </span>
+                                    <span *ngIf="event.source== 'facebook'" class=" video facebook">
+                                        <i class="pi pi-facebook"></i> 
+                                        Voir la vidéo
+                                    </span>
+                                </div>
+                            
                             </div>
                             <img src={{event.image}} alt="">
                         </div>
@@ -29,12 +39,21 @@
             <p-tabPanel header="Événements passés">
                 <div class="events">
                     <ng-template  ngFor let-event [ngForOf]="pastEvents">
-                        <div class="event">
+                        <div class="event" (click)="showVideo(event.link, event.source)">
                             <div class="left">
                                 <p class="header"> {{event.title}} </p>
                                 <p class="date">{{event.date.normal}}, <span>{{event.hour}}</span> </p>
                             <p class="text">{{event.text}}</p>
-                            <a href="https://youtu.be/8F1pCiB3n5o" target="_blank" class="video"*ngIf="event.link"> <i class="pi pi-youtube"></i> Voir la vidéo</a>
+                            <div class="video-bloc" *ngIf="event.link">
+                                <span *ngIf="event.source== 'youtube'" class="video youtube">
+                                    <i class="pi pi-youtube"></i> 
+                                    Voir la vidéo
+                                </span>
+                                <span *ngIf="event.source== 'facebook'" class=" video facebook">
+                                    <i class="pi pi-facebook"></i> 
+                                    Voir la vidéo
+                                </span>
+                            </div>
                             </div>
                             <img src={{event.image}} alt="">
                         </div>
@@ -47,12 +66,21 @@
                         <span>Pas de prochains événements, veuillez revenir plus tard. </span>
                     </div>
                     <ng-template  ngFor let-event [ngForOf]="nextEvents">
-                        <div class="event">
+                        <div class="event" (click)="showVideo(event.link, event.source)">
                             <div class="left">
                                 <p class="header"> {{event.title}} </p>
                                 <p class="date">{{event.date.normal}}, <span>{{event.hour}}</span> </p>
                             <p class="text">{{event.text}}</p>
-                            <a href="https://youtu.be/8F1pCiB3n5o" target="_blank" class="video"*ngIf="event.link"> <i class="pi pi-youtube"></i> Voir la vidéo</a>
+                            <div class="video-bloc" *ngIf="event.link">
+                                <span *ngIf="event.source== 'youtube'" class="video youtube">
+                                    <i class="pi pi-youtube"></i> 
+                                    Voir la vidéo
+                                </span>
+                                <span *ngIf="event.source== 'facebook'" class=" video facebook">
+                                    <i class="pi pi-facebook"></i> 
+                                    Voir la vidéo
+                                </span>
+                            </div>
                             </div>
                             <img src={{event.image}} alt="">
                         </div>

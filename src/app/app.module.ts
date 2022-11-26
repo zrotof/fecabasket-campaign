@@ -35,7 +35,8 @@ import { OfficeMemberDetailsComponent } from './components/office-member-details
 import { ProgramShortComponent } from './components/program-short/program-short.component';
 import { ProgramLongComponent } from './components/program-long/program-long.component';
 import { TestimoniesComponent } from './components/testimonies/testimonies.component';
-
+import { YoutubePlayerComponent } from './components/youtube-player/youtube-player.component';
+import { ProgramSummaryComponent } from './components/program-summary/program-summary.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,9 @@ import { TestimoniesComponent } from './components/testimonies/testimonies.compo
     OfficeMemberDetailsComponent,
     ProgramShortComponent,
     ProgramLongComponent,
-    TestimoniesComponent
+    ProgramSummaryComponent,
+    TestimoniesComponent,
+    YoutubePlayerComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

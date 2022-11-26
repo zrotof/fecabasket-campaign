@@ -8,7 +8,7 @@
     </div>
 
     <div class="program-top my-container">
-        <app-home-program></app-home-program>
+        <app-program-summary></app-program-summary>
     </div>
 
     <div class="program-videos my-container">
@@ -17,33 +17,18 @@
         <p>De l'Extrême-Nord au Sud, nous présentons notre programme pour un avenir en commun. L'union de tous les acteurs de la balle orange nous donne une force irrésistible; nous sommes prêts à prendre le relais.</p>
         
         <div class="videos">
-            <div class="video">
-                <img src="../../../assets/img/home/candidates/candidat.jpeg" alt="">
-                <i class="pi pi-youtube"></i>
-                <span class="video-title">L'essentiel du programme</span>
-                <span class="clock">
-                    <i class="pi pi-clock"></i>
-                    03:20
-                </span>
-            </div>
-            <div class="video">
-                <img src="../../../assets/img/agenda/campain-crtv.png" alt="">
-                <i class="pi pi-youtube"></i>
-                <span class="video-title">La vision sportive</span>
-                <span class="clock">
-                    <i class="pi pi-clock"></i>
-                    03:20
-                </span>
-            </div>
-            <div class="video">
-                <img src="../../../assets/img/home/candidates/imag.jpeg" alt="">
-                <i class="pi pi-youtube"></i>
-                <span class="video-title">Les compétitions internationnales</span>
-                <span class="clock">
-                    <i class="pi pi-clock"></i>
-                    03:20
-                </span>
-            </div>
+
+            <ng-template ngFor let-video [ngForOf]="videosList">
+                <div class="video" (click)="openYoutubePlayer(video.link)">
+                    <img src={{video.image}} alt="">
+                    <i class="pi pi-youtube"></i>
+                    <span class="video-title">{{video.title}}</span>
+                    <span class="clock">
+                        <i class="pi pi-clock"></i>
+                        {{video.time}}
+                    </span>
+                </div>
+            </ng-template>
         </div>
     
     </div>
@@ -53,7 +38,7 @@
             <img src="../../../assets/img/program/imag.jpeg" alt="">
             <div class="texts">
                 <h3 class="colored">En soutenant
-                    <span>Yves Tsala</span> ,</h3>
+                    <span>Yves Tsala</span></h3>
                 <p>vous pouvez porter ce programme auprès des électeurs et dans les régions.</p>
                 <div class="buttons">
                     <button class="share" routerLink="/partager-la-campagne"> <i class="pi pi-share-alt"></i>Partagez la campagne</button>

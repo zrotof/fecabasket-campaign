@@ -37,7 +37,7 @@ export class TestimoniesComponent implements OnInit {
       },
       {
         image: "../../assets/img/home/testimonies/gaston_kelman.jpg",
-        message: "Je suis un témoignage. Cliquez pour me modifier et valoriser votre activité. Vos clients peuvent ici partager leur expérience.Vos clients peuvent ici partager leur expérience. Vos clients peuvent ici partager leur expérience.",
+        message: "En cours ...",
         name: "Gaston Kelman",
         role:"Écrivain"
       },
@@ -55,7 +55,7 @@ export class TestimoniesComponent implements OnInit {
       },
       {
         image: "../../assets/img/home/testimonies/sacha_giffa.jpg",
-        message: "Je suis un témoignage. Cliquez pour me modifier et valoriser votre activité. Vos clients peuvent ici partager leur expérience.Vos clients peuvent ici partager leur expérience. Vos clients peuvent ici partager leur expérience.",
+        message: "J'ai suivi avec interet l'annonce de la candidature, puis la campagne de Yves Tsala. Sa mission en tant que Président de la ligue du Centre, au sein de  laquelle il a abattu un travail colossal, m'a démontré la solidité de ses qualités, de la force de son implication et de la sincérité de ses convictions. Je soutiens totalement la candidature du Président Yves Tsala ; il m'a en effet laissé l'impression profonde d'un professionnel et responsable en '3D' Trois dimensions en effet essentielles dans le climat difficile et les enjeux actuels : Dynamisme - Dévouement - Diversité.",
         name: "Sacha Giffa",
         role:"Ex head coach Lions Cameroun"
       }

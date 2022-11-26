@@ -62,12 +62,33 @@ $colorBlue: #15385c;
                             display: flex;
                             width: 100%;
                             margin-bottom: 55px;
-            
+                            cursor: pointer;
+                            border-radius: 5px;
+
+                            &:hover{
+                                .left{
+                                    .video-bloc{
+                                        .youtube{
+                                            
+                                            color: red;
+                                            
+                                        }
+    
+                                        .facebook{
+
+                                                color: blue;
+                                            
+                                        }
+                                    }
+                                }
+                            }
+
                             .left{
                                 display: flex;
                                 flex-direction: column;
                                 margin-right: 40px;
-            
+                                padding: 10px;
+
                                 .header{
                                     font-size: 1.3em;
                                     margin-bottom: 10px;
@@ -88,21 +109,19 @@ $colorBlue: #15385c;
                                     font-size: 0.95em;
                                 }
 
-                                .video{
-                                    text-decoration: none;
-                                    color: rgb(34, 34, 34);
-                                    display: flex;
-                                    margin-top: 20px;
-                                    align-items: center;
-                                    cursor: pointer;
-
-                                    &:hover{
-                                        color: red;
-                                    }
-
-                                    i{
-                                        margin-right: 10px;
-                                        font-size: 1.4em;
+                                .video-bloc{
+                                    .video{
+                                        text-decoration: none;
+                                        color: rgb(34, 34, 34);
+                                        display: flex;
+                                        margin-top: 20px;
+                                        align-items: center;
+                                        cursor: pointer;
+    
+                                        i{
+                                            margin-right: 10px;
+                                            font-size: 1.4em;
+                                        }
                                     }
                                 }
                             }
