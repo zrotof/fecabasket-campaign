@@ -1,5 +1,6 @@
 <div class="office-manager-detail">
-    <div class="content my-container">
+    
+    <div class="content">
 
         <div class="title">
 
@@ -20,7 +21,7 @@
             </div>
         </div>
 
-        <div class="top">
+        <div class="top-text">
             <img src={{officeMemberData.image}} alt="">
             <div class="manager-data">
                 <span class="name"> {{officeMemberData.name}} </span>
@@ -30,7 +31,7 @@
 
         <ng-template [ngIf]="officeMemberData.inProgress == false" [ngIfElse]="empty">
 
-            <div class="bottom">
+            <div class="bottom-text">
 
                 <div class="skills">
                     <p class="header">Compétences</p>
@@ -70,13 +71,11 @@
         </ng-template>
 
         <ng-template #empty>
-
             <div class="bottom">
                 <p style="margin: auto; font-size: 1.2em; margin-top: 50px; margin-bottom: 100px; text-align: center;">Contenu en cours d'édition ...</p>
             </div>
         </ng-template>
 
-
-        
     </div>
+
 </div>

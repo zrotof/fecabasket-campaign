@@ -110,7 +110,7 @@ export class OfficeMemberService {
     {
       id: 4,
       name:"Louis Tsoungui",
-      role: "Ancien International Camerounais",
+      role: "Ancien International Français",
       image: "../../assets/img/home/candidates/louis.jpg",
       project: [
         { paragraph: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil necessitatibus dicta cum ut odit fuga, harum dolor."},

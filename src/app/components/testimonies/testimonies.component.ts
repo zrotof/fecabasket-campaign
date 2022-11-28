@@ -37,7 +37,7 @@ export class TestimoniesComponent implements OnInit {
       },
       {
         image: "../../assets/img/home/testimonies/gaston_kelman.jpg",
-        message: "En cours ...",
+        message: "Le sport camerounais vit des moments exaltants. Mais surtout, il vit comme une renaissance, comme les débuts d’une aire nouvelle. Les filles dans le football ou le handball et le volleyball affichent de grandes ambitions. L’univers du sport roi, le football masculin connaît des bouleversements telluriques. Il serait impensable que le basketball ne surfe pas lui aussi sur la crête de cette vague du renouveau. Je suis intimement convaincu que l’équipe de Yves Tsala est la meilleure pour ce défi. Je n’en doute pas un seul instant. Son bilan dans la ligue de basketball du Centre parle en sa faveur ; car pour relever ce challenge il faut la conviction, le professionnalisme, l'expérience et une vision. Et ce groupe au milieu duquel je reconnais des figures prestigieuses du basketball camerounais, concentre toutes ces qualités. Laissons enfin nos fédérations sportives à ceux qui aiment ces sports, qui les connaissent et qui sauront les porter avec passion et savoir-faire. Nous avons commencé à le faire. Je sais que nous allons poursuivre dans cette voie.",
         name: "Gaston Kelman",
         role:"Écrivain"
       },
