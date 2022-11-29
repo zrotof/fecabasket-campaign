@@ -25,7 +25,8 @@
             <img src={{officeMemberData.image}} alt="">
             <div class="manager-data">
                 <span class="name"> {{officeMemberData.name}} </span>
-                <span class="role"> {{officeMemberData.role}} </span>
+                <span class="role" *ngIf="officeMemberData.role.label"> {{officeMemberData.role.label}} </span>
+                <span class="role"> {{officeMemberData.role.value}} </span>
             </div>
         </div>
 

@@ -95,11 +95,9 @@ export class OfficeMemberService {
       image: "../../assets/img/home/candidates/daniel.png",
       project: [
         { paragraph: "Pour les 2 prochaines années: Mettre sur pied un manuel de procédures financières au sein de la FECABASKET afin de garantir la bonne gouvernance au sein de cette organisation sportive olympique en collaboration avec les exécutifs régionaux. Également je souhaite mettre en place le coachinf des CDF des bureaux de ligues régionales et départementales sur le suivi budgétaire et la tenue de comptes ainsi que l'harmonisation des rapports financiers mensuels à adresser aux parties prenantes (Sponsors, Conseil d'administration, etc"},
-        { paragraph: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil necessitatibus dicta cum ut odit fuga, harum dolor."}
       ],
       expectation: [
         { paragraph: "Le basketball Camerounais est un vaste chantier, je souhaite obtenir les suffrages des délégués pour suivre la construction de ce bel édifice comme acteur principal dans l'implémentation des meilleures pratiques en matière de gestion financière."},
-        { paragraph: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil necessitatibus dicta cum ut odit fuga, harum dolor."}
       ],
       pathway: [
         { paragraph: "Dès mes débuts au collège Alfred Saker, j'ai très vite été en formation auprès du célèbre arbitre Dipita Tongo. Puis à l'université, j'ai été encadré par l'expert Alexis Siewe, alors formateur de la première d'étudiants arbitres. J'ai par la suite eu une belle carrière d'arbitre qui ma permise de diriger de nombreuses finales de compétitions les plus prestigieuses entre 2003 et 2013 sur le territoire Camerounais."},

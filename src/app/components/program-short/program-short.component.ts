@@ -36,7 +36,7 @@ export class ProgramShortComponent implements OnInit {
             {source: "../../../assets/img/home/program/gouvernance/image-two.png"}
           ],
           texts: [
-            {text: "Contenu en cours d'édiditon."}
+            {text: "Contenu en cours d'édition."}
           ]
         }
       },
@@ -49,7 +49,7 @@ export class ProgramShortComponent implements OnInit {
             {source: "../../../assets/img/home/program/communication/image-four.png"}
           ],
           texts: [
-            {text: "Contenu en cours d'édiditon."}
+            {text: "Contenu en cours d'édition."}
           ]
         }
       },
@@ -61,7 +61,7 @@ export class ProgramShortComponent implements OnInit {
             {source: "../../../assets/img/home/program/championnat_nationaux_regionaux/image-two.png"}
           ],
           texts: [
-            {text: "Contenu en cours d'édiditon."}
+            {text: "Contenu en cours d'édition."}
           ]
         }
       },
@@ -75,7 +75,7 @@ export class ProgramShortComponent implements OnInit {
             {source: "../../../assets/img/home/program/direction_technique_nationale/image-four.png"}
           ],
           texts: [
-            {text: "Contenu en cours d'édiditon."}
+            {text: "Contenu en cours d'édition."}
           ]
         }
       },
@@ -87,7 +87,7 @@ export class ProgramShortComponent implements OnInit {
             {source: "../../../../assets/img/home/program/ressource/image-two.png"}
           ],
           texts: [
-            {text: "Contenu en cours d'édiditon."}
+            {text: "Contenu en cours d'édition."}
           ]
         }
       },
@@ -100,7 +100,7 @@ export class ProgramShortComponent implements OnInit {
             {source: "../../../assets/img/home/program/commission_mission/image-three.png"}
           ],
           texts: [
-            {text: "Contenu en cours d'édiditon."}
+            {text: "Contenu en cours d'édition."}
           ]
         }
       },
@@ -113,7 +113,7 @@ export class ProgramShortComponent implements OnInit {
             {source: "../../../assets/img/home/program/marketing/image-three.png"}
           ],
           texts: [
-            {text: "Contenu en cours d'édiditon."}
+            {text: "Contenu en cours d'édition."}
           ]
         }
       },
@@ -124,7 +124,7 @@ export class ProgramShortComponent implements OnInit {
             {source: "../../../assets/img/home/program/collaboration_internationale/image-one.png"}
           ],
           texts: [
-            {text: "Contenu en cours d'édiditon."}
+            {text: "Contenu en cours d'édition."}
           ]
         }
       },
@@ -138,7 +138,7 @@ export class ProgramShortComponent implements OnInit {
             {source: "../../../assets/img/home/program/formation/image-four.png"}
           ],
           texts: [
-            {text: "Contenu en cours d'édiditon."}
+            {text: "Contenu en cours d'édition."}
           ]
         }
       },
@@ -151,7 +151,7 @@ export class ProgramShortComponent implements OnInit {
             {source: "../../../assets/img/home/program/infrastructure/image-two.png"}
           ],
           texts: [
-            {text: "Contenu en cours d'édiditon."}
+            {text: "Contenu en cours d'édition."}
           ]
         }
       }
