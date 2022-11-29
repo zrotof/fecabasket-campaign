@@ -50,7 +50,8 @@
                     <img src={{officeMember.image}} alt="">
                     <div class="texts">
                         <span class="name">{{officeMember.name}}</span>
-                        <span class="role">{{officeMember.role}}</span>
+                        <span class="role" *ngIf="officeMember.role.label"> {{officeMember.role.label}} </span>
+                        <span class="role">{{officeMember.role.value}}</span>
                     </div>
                     <button (click)="showOfficeManagerDetails(officeMember.id)" >Voir plus</button>
             </div>

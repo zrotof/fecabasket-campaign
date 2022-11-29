@@ -95,6 +95,7 @@
                 color: black;
                 position: relative;
                 margin-left: 5px;
+                display: flex;
                 cursor: pointer;
 
                 &::after{
@@ -115,6 +116,10 @@
                     &::after{
                         background: #f56f36;
                     }
+                }
+
+                i{
+                    display: none;
                 }
             }
         }
@@ -188,15 +193,30 @@
             .call-to-donate{
                 flex-direction: column;
                 text-align: center;
+                
                 span{
                     padding: 10px 15px;
-                    border: 1px solid black;
+                    border: 1px solid #ed6e34;
                     width: fit-content;
                     margin: auto;
                     margin-top: 10px;
+                    background: #ed6e34;
+                    color: white;
+                    border: none;
 
                     &::after{
                         content: none;
+                    }
+
+                    &:hover{
+                        background: white;
+                        color: #ed6e34;
+                    }
+
+                    i{
+                        display: block;
+                        margin-right: 10px;
+                        font-size: 1.2em;
                     }
                 }
             }

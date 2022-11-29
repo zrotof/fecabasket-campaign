@@ -2,6 +2,8 @@
 @import 'swiper/scss/effect-fade';
 @import 'swiper/scss/pagination';
 
+
+
     .arguments{
         width: 100%;
         display: flex;
@@ -14,6 +16,10 @@
             align-items: center;
             position: relative;
             justify-content: center;
+
+            .swiper-slide {
+                height: auto;
+            }
             
             .mySlide {
                 
@@ -24,6 +30,7 @@
                 cursor: pointer;
                 background: white;
                 padding: 10px;
+                height: 100%;
     
                 img{
                     width: 100%;

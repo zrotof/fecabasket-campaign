@@ -9,7 +9,10 @@ export class OfficeMemberService {
     {
       id: 1,
       name:"Marie-Chantal Zeh",
-      role: "1 ère Vice-Présidente",
+      role: {
+        label: "Candidate au poste de : ",
+        value: "1 ère Vice-Présidente"
+      },
       image: "../../assets/img/home/candidates/marie_zeh.jpg",
       project: [
         { paragraph: "Je répond à l’appel des pratiquantes et pratiquants de la balle orange pour prendre des responsabilités à la FECABASKET."},
@@ -20,9 +23,10 @@ export class OfficeMemberService {
         { paragraph: "J’aimerais observer une mobilisation totale de la famille basket camerounaise, aussi bien des acteurs locaux que ceux de la diaspora. Notre équipe doit couvrir le terrain et aller à la rencontre des électeurs, dans les régions."},
       ],
       pathway: [
-        { paragraph: "Depuis plus de 30 ans, j’ai successivement occupé les postes gestionnaires des ventes chez 3M, de directrice adjointe des ventes dans l’hôtellerie et aujourd’hui directrice régionale des ventes chez MTN Cameroun."}
+        { paragraph: "Depuis plus de 30 ans, j’ai successivement occupé les postes gestionnaires des ventes chez 3M, de directrice adjointe des ventes dans l’hôtellerie et aujourd’hui Manager en charge des grandes entreprises au Cameroun."}
       ],
       skills: [
+        
         {
             label: "Dirigeante de plusieurs structures de basket-ball notamment YUC basket-ball",
             list: [
@@ -39,7 +43,10 @@ export class OfficeMemberService {
     {
       id: 2,
       name:"Serge Bangda",
-      role: "Secrétaire Général",
+      role: {
+        label: "Candidat au poste de :",
+        value: "Secrétaire Général"
+      },
       image: "../../assets/img/home/candidates/serge.png",
       project: [
         { paragraph: "Prendre la Présidence de Fédération Camerounaise de Basket-Ball ."},
@@ -81,36 +88,50 @@ export class OfficeMemberService {
     {
       id: 3,
       name:"Daniel Ndoumbe",
-      role: "Chef des Finances",
+      role: {
+        label: "Candidat au poste de :",
+        value: "Chef du Département des Finances"
+      },
       image: "../../assets/img/home/candidates/daniel.png",
       project: [
-        { paragraph: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil necessitatibus dicta cum ut odit fuga, harum dolor."},
+        { paragraph: "Pour les 2 prochaines années: Mettre sur pied un manuel de procédures financières au sein de la FECABASKET afin de garantir la bonne gouvernance au sein de cette organisation sportive olympique en collaboration avec les exécutifs régionaux. Également je souhaite mettre en place le coachinf des CDF des bureaux de ligues régionales et départementales sur le suivi budgétaire et la tenue de comptes ainsi que l'harmonisation des rapports financiers mensuels à adresser aux parties prenantes (Sponsors, Conseil d'administration, etc"},
         { paragraph: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil necessitatibus dicta cum ut odit fuga, harum dolor."}
       ],
       expectation: [
-        { paragraph: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil necessitatibus dicta cum ut odit fuga, harum dolor."},
+        { paragraph: "Le basketball Camerounais est un vaste chantier, je souhaite obtenir les suffrages des délégués pour suivre la construction de ce bel édifice comme acteur principal dans l'implémentation des meilleures pratiques en matière de gestion financière."},
         { paragraph: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil necessitatibus dicta cum ut odit fuga, harum dolor."}
       ],
       pathway: [
-        { paragraph: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil necessitatibus dicta cum ut odit fuga, harum dolor."},
-        { paragraph: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil necessitatibus dicta cum ut odit fuga, harum dolor."}
+        { paragraph: "Dès mes débuts au collège Alfred Saker, j'ai très vite été en formation auprès du célèbre arbitre Dipita Tongo. Puis à l'université, j'ai été encadré par l'expert Alexis Siewe, alors formateur de la première d'étudiants arbitres. J'ai par la suite eu une belle carrière d'arbitre qui ma permise de diriger de nombreuses finales de compétitions les plus prestigieuses entre 2003 et 2013 sur le territoire Camerounais."},
+        { paragraph: "Parallèlement  ces prouesses sur l'aire de jeu, j'ai eu la grâce d'être recruté comme cadre à la direction financière de AES SONEL où j'ai occupé tour à tour des postes d'analyste comptable au siège, hef de département Comptable et Financier pour les régions Centre, Sud et Est. J'ai également été OHADA Reporting Team Leader au siège"}
       ],
       skills: [
         {
-            label: "Lorem",
+          label: "Arbitre international de basket-ball, Promotion Rabat 2011",
+        },
+        {
+        label: "Président de l'Association Camerounaise des Officiels de Basketball - ACOB",
+        },
+        {
+            label: "Msc Finance à l'EM Lyon en France",
             list: [
-              { paragraph: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil"},
-              { paragraph: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil necessi"}
+              { paragraph: "En responsabilité pour plusiurs finales de compétitions nationales (coupes du Cameroun de Basketball, Jeux Universitaires ..."},
+              { paragraph: "8 ans d'expérience en management au sein de l'ACOB"},
+              { paragraph: "6e promotion du cours avancé en management du sport au Comité National Olympique et Sportif du Cameroun"},
+              { paragraph: "Forte expérience au sein de la Direction Financière de ENEO Cameroun S.A"}
             ]
         }
 
       ],
-      inProgress: true
+      inProgress: false
     },
     {
       id: 4,
       name:"Louis Tsoungui",
-      role: "Ancien International Français",
+      role: {
+        label: "",
+        value: "Ancien International Français"
+      },
       image: "../../assets/img/home/candidates/louis.jpg",
       project: [
         { paragraph: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil necessitatibus dicta cum ut odit fuga, harum dolor."},
@@ -139,7 +160,10 @@ export class OfficeMemberService {
     {
       id: 5,
       name:"Luc Mbah A Moute",
-      role: "Ancien Joueur NBA",
+      role: {
+        label: "",
+        value: "Ancien Joueur NBA"
+      },
       image: "../../assets/img/home/candidates/moute.jpeg",
       project: [
         { paragraph: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil necessitatibus dicta cum ut odit fuga, harum dolor."},
