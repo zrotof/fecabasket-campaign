@@ -20,6 +20,18 @@ export class AgendaComponent implements OnInit {
     {
       title: "Assemblées Générales Électives",
       date: {
+        normal:"30 Novembre 2022",
+        programatic: "2022-11-30"
+      },
+      hour: "à partir de 14h00",
+      text: "Assemblée Générale Elective de la Fédération Camerounaise de Basket-Ball. Elle se tiendra dans la salle des actes de la Délégation Régionales des Sports et de l'Education physique du Littoral à Douala.",
+      link: "",
+      image: "../../../assets/img/agenda/ag-30-11.jpeg",
+      source: ""
+    },
+    {
+      title: "Assemblées Générales Électives",
+      date: {
         normal:"28 Novembre 2022",
         programatic: "2022-11-28"
       },
@@ -28,7 +40,8 @@ export class AgendaComponent implements OnInit {
       link: "",
       image: "../../../assets/img/agenda/ag-28-11.jpeg",
       source: ""
-    },{
+    },
+    {
       title: "Assemblées Générales Électives",
       date: {
         normal:"26 Novembre 2022",

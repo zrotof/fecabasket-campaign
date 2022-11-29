@@ -45,7 +45,7 @@ export class ProgramLongComponent implements OnInit {
               {text: "Restructurer l’administration fédérale, améliorer les conditions d’accueil et de travail. Également réorganiser les schémas financiers ainsi que la DTN"},
               {text: "Mettre en œuvre un nouvel organigramme"},
               {text: "Concevoir un schéma directeur informatique (installation d’un réseau intranet et un système de gestion électronique de nos données)"},
-              {text: "Etablir et aménager d’un siège fédéral"},
+              {text: "Etablir et aménager un siège fédéral"},
               {text: "Réorganiser la Direction Technique Nationale"}
             ]
           }
@@ -164,7 +164,7 @@ export class ProgramLongComponent implements OnInit {
             label: "Nos propositions",
             paragraphs: [
               {text: "Nous voulons créer une communauté de valeurs incitant à l’engagement, en relevant la quantité et la qualité de nos ressources humaines"},
-              {text: "Nous voulons innover dans le soutien apporté aux ligues régionales et départementales et contribuer à l’influenceur de l’Etat pour la réhabilitation et la création des infrastructures."},
+              {text: "Nous voulons innover dans le soutien apporté aux ligues régionales et départementales en développant un plan de partenariat avec le Feicom, les CVUC pour impliquer les collectivités territoriales décentralisées dans le développement du basket-ball"},
               {text: "Créer un parcours d’incitation à l’engagement et construire des outils d’animation"},
               {text: "Diversifier les apports financiers, exploiter les différents modes de financements"},
               {text: "Organiser la remise en état des terrains et créer de nouveaux terrains"},
@@ -188,7 +188,7 @@ export class ProgramLongComponent implements OnInit {
           {
             label: "Nos Projets",
             paragraphs: [
-              {text: "Mettre en place un modèle efficace de gestion qui promeut nos valeurs : le respect, la transparence, l’équité et la passion et l’éthique."}
+              {text: "Mettre en place un modèle efficace de gestion qui promeut nos valeurs : le respect, la transparence, l’équité, la passion et l’éthique."}
             ]
           },
           {
@@ -277,7 +277,7 @@ export class ProgramLongComponent implements OnInit {
           {
             label: "Nos Projets",
             paragraphs: [
-              {text: "Nous envisageons de mettre en place des formations nationales ; celles FIBA se raréfient. Mais nous voulons également former les dirigeants de ligues et ceux du bureau fédéral."}
+              {text: "Nous envisageons de mettre en place des formations nationales ; celles FIBA se raréfient et nous voulons également former les dirigeants de ligues et ceux du bureau fédéral."}
             ]
           },
           {
