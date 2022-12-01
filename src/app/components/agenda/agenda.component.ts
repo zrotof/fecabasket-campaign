@@ -66,7 +66,7 @@ export class AgendaComponent implements OnInit {
       source: ""
     },
     {
-      title: "Face au manque de soutien à Garoua, le Président Yves Tsala va apporter des solution",
+      title: "Face au manque de soutien à Garoua, le Président Yves Tsala va apporter des solutions",
       date: {
         normal:"23 novembre 2022",
         programatic: "2022-11-23"
@@ -132,21 +132,9 @@ export class AgendaComponent implements OnInit {
         programatic: "2022-11-18"
       },
       hour: "",
-      text: "Le 05 novembre 2022 à 10h00, Yves Tsala prononçait une allocution suite au dépôt de sa candidature aux élections du bureau national fédéral de la fecabasket. Il s’est exprimé dans la salle VIP au Palais des Sports de Yaoundé, puis devant la foule présente devant les lieux.",
+      text: "Nos jeunes sont prêts à découvrir les compétitions internationales. le groupe YT2022 par son leader, exprime les problématiques qui freinent les sorties des catégories jeunes.",
       link: 'https://www.youtube.com/embed/ve7xPW1nVKQ',
-      image: "../../../assets/img/agenda/young-league.jpeg",
-      source: "youtube"
-    },
-    {
-      title: "La DTN vue par votre Président",
-      date: {
-        normal:"17 novembre 2022",
-        programatic: "2022-11-17"
-      },
-      hour: "",
-      text: "Le 05 novembre 2022 à 10h00, Yves Tsala prononçait une allocution suite au dépôt de sa candidature aux élections du bureau national fédéral de la fecabasket. Il s’est exprimé dans la salle VIP au Palais des Sports de Yaoundé, puis devant la foule présente devant les lieux.",
-      link: 'https://www.youtube.com/embed/os1pOs_lNd4',
-      image: "../../../assets/img/agenda/campain-crtv.png",
+      image: "../../../assets/img/agenda/event-jeunes.jpeg",
       source: "youtube"
     },
     {
@@ -156,9 +144,21 @@ export class AgendaComponent implements OnInit {
         programatic: "2022-11-17"
       },
       hour: "",
-      text: "Le 05 novembre 2022 à 10h00, Yves Tsala prononçait une allocution suite au dépôt de sa candidature aux élections du bureau national fédéral de la fecabasket. Il s’est exprimé dans la salle VIP au Palais des Sports de Yaoundé, puis devant la foule présente devant les lieux.",
+      text: "Trouvons de nouvelles ressources financières si on parle de ressources, on touche au nerf de la guerre. Le Président Yves Tsala fait le tour de la question et rassure les auditeurs sur la question du financement de cet ambitieux projet de développement.",
+      link: 'https://www.youtube.com/embed/os1pOs_lNd4',
+      image: "../../../assets/img/agenda/event-17-11.jpeg",
+      source: "youtube"
+    },
+    {
+      title: "La DTN vue par votre Président",
+      date: {
+        normal:"17 novembre 2022",
+        programatic: "2022-11-17"
+      },
+      hour: "",
+      text: "La DTN vue par votre Président Yves Tsala fait une introduction de ce que représente la Direction Technique Nationale, pour le basket-ball au Cameroun. Découvrons en quoi la DTN est un pilier dans son projet de développement. ",
       link: 'https://www.youtube.com/embed/CpT0H9fGXuo',
-      image: "../../../assets/img/agenda/campain-crtv.png",
+      image: "../../../assets/img/agenda/event-dtn.jpeg",
       source: "youtube"
     },
     {
@@ -180,9 +180,9 @@ export class AgendaComponent implements OnInit {
         programatic: "2022-11-15"
       },
       hour: "",
-      text: "Le 05 novembre 2022 à 10h00, Yves Tsala prononçait une allocution suite au dépôt de sa candidature aux élections du bureau national fédéral de la fecabasket. Il s’est exprimé dans la salle VIP au Palais des Sports de Yaoundé, puis devant la foule présente devant les lieux.",
+      text: "Depuis l'annonce de sa candidature au poste de Président de la fédération camerounaise de basket-ball, le Président Yves Tsala ne cesse de répondre aux sollicitations des médias. Ecoutons-le au micro de Bonbon TV ; il présente sa candidature pour cette entreprise, son parcours, ses motivations et son équipe.",
       link: 'https://www.youtube.com/embed/SPq1VcEd4Zo',
-      image: "../../../assets/img/agenda/campain-crtv.png",
+      image: "../../../assets/img/agenda/event-15-11.jpeg",
       source: "youtube"
     },
     {
