@@ -86,6 +86,46 @@ export class OfficeMemberService {
       inProgress: false
     },
     {
+      id: 4,
+      name:"Maurice Bell",
+      role: {
+        label: "Candidat au poste de :",
+        value: "Directeur Marketing / Communication / Évènementiel"
+      },
+      image: "../../assets/img/home/candidates/bell-maurice.png",
+      project: [
+        { paragraph: "Évoluer vers des postes de direction au sein fédérations sportives."},
+        { paragraph: "Créer une structure d’accompagnement aux fédérations sportives pour la formation et le développement (notamment en Afrique sub-saharienne)."},
+      ],
+      expectation: [
+        { paragraph: "Acquérir les compétences nécessaires à l’organisation et à la gestion stratégique d’une entreprise et d’une structure sportive à dimension internationale."},
+        { paragraph: "Perfectionner et étendre la maîtrise le management d’équipe, le leadership, la négociation, la gestion de projets, et acquérir des connaissances marketing et commerciales."},
+      ],
+      pathway: [
+        { paragraph: "20 ans d'expérience professionnelle (notamment comme consultant dans l’industrie aéronautique), et comme fondateur et Président de plusieurs associations sportives et communautaires."},
+        { paragraph: "Passionnée de basket-ball ; Plusieurs clubs de bon niveau en France ; équipe nationale du Cameroun."},
+        { paragraph: "Création de plusieurs associations (sportives et communautaires)."},
+      ],
+      skills: [
+        {
+          label: "Directeur marketing ASVEL Douala Basket-Ball (10 ans)",
+        },
+        {
+          label: "Président de Dibang Basket-Ball Club",
+          list: [
+              { paragraph: "Responsable de la communication, chargé de définir la stratégie de développement du club"},
+              { paragraph: "Gestion de projets sportifs, gestion administrative des dossiers"},
+              { paragraph: "Collaboration avec le service Marketing (recherches sponsors et de partenariats)"},
+              { paragraph: "Mise en œuvre du projet « Pole Diaspora »"},
+              { paragraph: "Relations avec les partenaires institutionnels"},
+              { paragraph: "Participation au recrutement et à la formation de cadres dirigeants"}
+            ]
+        }
+
+      ],
+      inProgress: false
+    },
+    {
       id: 3,
       name:"Daniel Ndoumbe",
       role: {
